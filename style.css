@@ -96,9 +96,66 @@ header nav ul a:nth-of-type(3) {
 .contacts-body .content .contact-part {
   width: 50%;
   height: 100vh;
-  background-image: url(img/Contact.png);
-  background-position: center;
+  background-image: url(img/contact.png);
   background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+}
+.contacts-body .content .contact-part .contact {
+  width: 64%;
+  margin-left: 11.25%;
+}
+.contacts-body .content .contact-part .contact h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.41);
+  margin-bottom: 5%;
+}
+.contacts-body .content .contact-part .contact div {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.contacts-body .content .contact-part .contact div p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 31px;
+}
+.contacts-body .content .contact-part .contact .social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.4%;
+}
+.contacts-body .content .contact-part .contact .social div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contacts-body .content .contact-part .contact .social a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  color: #111740;
+  padding: 20px;
+  width: 66px;
+  height: 66px;
+  display: grid;
+  border: 5px solid #111740;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.contacts-body .content .contact-part .contact .social a i {
+  font-size: 32px;
+}
+.contacts-body .content .contact-part .contact .social p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

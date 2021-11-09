@@ -9,9 +9,77 @@
         .contact-part{
             width: 50%;
             height: 100vh;
-            background-image: url(img/Contact.png);
-            background-position: center;
+            background-image: url(img/contact.png);
             background-size: cover;
+            background-position: bottom;
+            display: flex;
+            align-items: center;
+
+
+            .contact{
+                width: 64%;
+                margin-left: 11.25%;
+
+                h2{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 52px;
+                    color: white;
+                    text-shadow: 4px 4px 2px rgba($color: #000000, $alpha: 0.41);
+                    margin-bottom: 5%;
+                }
+
+                div{
+                    display: flex;
+                    gap: 25px;
+                    align-items: center;
+
+                    p{
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        font-size: 31px;
+                    }
+                }
+
+                .social{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 6.4%;
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        background-color: white;
+                        border-radius: 50px;
+                        color: #111740;
+                        padding: 20px;
+                        width: 66px;
+                        height: 66px;
+                        display: grid;
+                        border: 5px solid #111740;
+                        display: flex;
+                        justify-content: center;
+                        place-items: center;
+
+                        i{
+                            font-size: 32px;
+                        }
+                    }
+
+                    p{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                }
+
+            }
         }
     }
     
