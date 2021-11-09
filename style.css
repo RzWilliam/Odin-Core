@@ -96,7 +96,7 @@ header nav ul a:nth-of-type(3) {
 .contacts-body .content .contact-part {
   width: 50%;
   height: 100vh;
-  background-image: url(img/contact.png);
+  background-image: url(img/background-contact.png);
   background-size: cover;
   background-position: bottom;
   display: flex;
