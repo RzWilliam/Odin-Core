@@ -15,13 +15,12 @@
             display: flex;
             align-items: center;
 
-
             .contact{
                 width: 64%;
                 margin-left: 11.25%;
 
                 h2{
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $montsans;
                     font-weight: bold;
                     font-size: 52px;
                     color: white;
@@ -36,7 +35,7 @@
 
                     p{
                         color: white;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $montsans;
                         font-weight: 500;
                         font-size: 31px;
                     }
@@ -57,7 +56,6 @@
                         text-decoration: none;
                         background-color: white;
                         border-radius: 50px;
-                        color: #111740;
                         padding: 20px;
                         width: 66px;
                         height: 66px;
@@ -69,11 +67,12 @@
 
                         i{
                             font-size: 32px;
+                            color: #111740;
                         }
                     }
 
                     p{
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $montsans;
                         font-weight: 500;
                         font-size: 20px;
                     }
@@ -81,6 +80,5 @@
 
             }
         }
-    }
-    
+    }   
 }

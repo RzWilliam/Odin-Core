@@ -139,7 +139,6 @@ header nav ul a:nth-of-type(3) {
   text-decoration: none;
   background-color: white;
   border-radius: 50px;
-  color: #111740;
   padding: 20px;
   width: 66px;
   height: 66px;
@@ -151,6 +150,7 @@ header nav ul a:nth-of-type(3) {
 }
 .contacts-body .content .contact-part .contact .social a i {
   font-size: 32px;
+  color: #111740;
 }
 .contacts-body .content .contact-part .contact .social p {
   font-family: "Montserrat", sans-serif;
