@@ -76,7 +76,7 @@ header nav ul {
   display: flex;
   gap: 96px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   header nav ul {
     display: none;
   }
@@ -101,7 +101,7 @@ header nav .burger {
   gap: 6px;
   transform: rotate(90deg);
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   header nav .burger {
     display: flex;
   }
@@ -143,7 +143,7 @@ header nav .burger div {
   width: 64%;
   margin-left: 11.25%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .contact-part .contact {
     width: 100%;
     margin: 0;
@@ -157,7 +157,7 @@ header nav .burger div {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.41);
   margin-bottom: 5%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .contact-part .contact h2 {
     width: 100%;
     text-align: center;
@@ -168,13 +168,13 @@ header nav .burger div {
   gap: 25px;
   align-items: center;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .contact-part .contact div {
     gap: 10px;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .contact-part .contact div:nth-of-type(3) {
     flex-direction: row;
     justify-content: space-evenly;
@@ -195,7 +195,7 @@ header nav .burger div {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .contact-part .contact div p {
     font-size: 16px;
     width: 100%;
@@ -272,7 +272,7 @@ header nav .burger div {
   font-weight: medium;
   margin-top: 10%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .form-part h2 {
     text-align: center;
   }
@@ -343,7 +343,7 @@ header nav .burger div {
   padding: 20px 60px;
   border-radius: 18px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
   .contacts-body .content .form-part form button {
     padding: 10px 30px;
     font-size: 17px;
