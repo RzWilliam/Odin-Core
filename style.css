@@ -471,5 +471,31 @@ header {
       background-position: center; }
     .valeur_container .valeur div:nth-child(3) {
       background-image: url("img/runes2.png"); }
+  .valeur_container .social_media {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .valeur_container .social_media div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .valeur_container .social_media div h1 {
+        color: #111740;
+        font-size: 45px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500; }
+      .valeur_container .social_media div p {
+        padding-top: 30px;
+        color: #707070;
+        font-size: 31px;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 100;
+        text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
