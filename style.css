@@ -344,7 +344,33 @@ header {
     width: 50%;
     height: 100%; }
   .service div:nth-child(1) {
-    background-color: #101640; }
+    background-color: #101640;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px; }
+    .service div:nth-child(1) h1 {
+      font-family: 'Segoe UI',sans-serif;
+      font-weight: 700;
+      font-size: 45px;
+      color: white; }
+    .service div:nth-child(1) p {
+      padding-top: 30px;
+      font-family: 'Segoe UI',sans-serif;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 37px;
+      color: white;
+      padding-bottom: 40px; }
+    .service div:nth-child(1) a {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: black;
+      padding: 20px 50px;
+      background-color: white;
+      border-radius: 32px; }
 
 .partner {
   width: 100%;
@@ -355,6 +381,35 @@ header {
     width: 50%;
     height: 100%; }
   .partner div:nth-child(2) {
-    background-color: #101640; }
+    background-color: #101640;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 30px; }
+    .partner div:nth-child(2) h1 {
+      font-family: 'Segoe UI',sans-serif;
+      font-weight: 700;
+      font-size: 45px;
+      color: white;
+      padding-top: 40px; }
+    .partner div:nth-child(2) p {
+      padding-top: 30px;
+      font-family: 'Segoe UI',sans-serif;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 37px;
+      color: white;
+      text-align: left;
+      padding-right: 150px; }
+    .partner div:nth-child(2) a {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: black;
+      padding: 20px 50px;
+      background-color: white;
+      border-radius: 32px;
+      margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
