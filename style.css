@@ -187,8 +187,10 @@ header nav .burger div {
 .contacts-body .content .contact-part .contact div p {
   color: white;
   font-family: "Montserrat", sans-serif;
+  overflow-wrap: break-word;
+  width: 100%;
   font-weight: 500;
-  font-size: 31px;
+  font-size: 28px;
 }
 @media screen and (max-width: 800px) {
   .contacts-body .content .contact-part .contact div p {
