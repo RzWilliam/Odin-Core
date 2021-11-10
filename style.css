@@ -280,4 +280,52 @@ header {
               padding: 10px 30px;
               font-size: 17px; } }
 
+.burger_container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+  opacity: 0;
+  transition: 2s ease;
+  z-index: 10; }
+  .burger_container a {
+    text-decoration: none;
+    color: #707070;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px; }
+  .burger_container .burger_cross {
+    position: absolute;
+    top: 35px;
+    right: 16px;
+    font-size: 34px; }
+  .burger_container.active {
+    opacity: 0;
+    transition: 2s ease;
+    display: flex;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards; }
+  .burger_container.animation {
+    opacity: 1;
+    background-color: white;
+    animation: fade-out 1s;
+    animation-fill-mode: forwards; }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    background-color: transparent; }
+  to {
+    opacity: 1;
+    background-color: white; } }
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    background-color: white; }
+  to {
+    opacity: 0;
+    background-color: transparent; } }
+
 /*# sourceMappingURL=style.css.map */
