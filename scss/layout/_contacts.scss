@@ -6,6 +6,10 @@
         display: flex;
         width: 100%;
 
+        @include xs{
+            flex-direction: column;
+        }
+
         .contact-part{
             width: 50%;
             height: 100vh;
@@ -15,9 +19,18 @@
             display: flex;
             align-items: center;
 
+            @include xs{
+                width: 100%;
+            }
+
             .contact{
                 width: 64%;
                 margin-left: 11.25%;
+
+                @include mobileS{
+                    width: 100%;
+                    margin: 0;
+                }
 
                 h2{
                     font-family: $montsans;
@@ -26,6 +39,11 @@
                     color: white;
                     text-shadow: 4px 4px 2px rgba($color: #000000, $alpha: 0.41);
                     margin-bottom: 5%;
+
+                    @include mobileS{
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
 
                 div{
@@ -33,11 +51,38 @@
                     gap: 25px;
                     align-items: center;
 
+                    @include mobileS{
+                        gap: 10px;
+                        flex-direction: column;
+                    }
+
+                    &:nth-of-type(3){
+                        @include mobileS{
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                        }
+                    }
+
+                    img{
+                        width: 45px;
+                        height: 45px;
+                    }
+
                     p{
                         color: white;
                         font-family: $montsans;
                         font-weight: 500;
                         font-size: 31px;
+
+                        @include xs{
+                            font-size: 24px;
+                        }
+
+                        @include mobileS{
+                            font-size: 16px;
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -65,9 +110,18 @@
                         justify-content: center;
                         place-items: center;
 
+                        @include xs{
+                            width: 45px;
+                            height: 45px;
+                        }
+
                         i{
                             font-size: 32px;
                             color: #111740;
+
+                            @include xs{
+                                font-size: 24px;
+                            }
                         }
                     }
 
@@ -75,6 +129,10 @@
                         font-family: $montsans;
                         font-weight: 500;
                         font-size: 20px;
+
+                        @include xs{
+                            font-size: 16px;
+                        }
                     }
                 }
 
@@ -90,6 +148,11 @@
             flex-direction: column;
             padding-left: 5%;
 
+            @include xs{
+                width: 100%;
+                padding: 0 5%;            
+            }
+
 
             h2{
                 color: #111740;
@@ -98,6 +161,9 @@
                 font-weight: medium;
                 margin-top: 10%;
 
+                @include mobileS{
+                    text-align: center;
+                }
             }
             
 
@@ -109,6 +175,10 @@
                 width: 100%;
                 height: 100%;
                 margin-top: 1%;
+
+                @include xs{
+                    align-items: center;
+                }
 
                 input{
                     border: 3px solid #111740 ;
@@ -165,6 +235,11 @@
                     font-size: 34px;
                     padding: 20px 60px;
                     border-radius: 18px;
+
+                    @include mobileS{
+                        padding: 10px 30px;
+                        font-size: 17px;
+                    }
                 }
             }
         }

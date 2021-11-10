@@ -24,15 +24,40 @@ header{
             display: flex;
             gap: 96px;
 
+            @include mobileS{
+                display: none;
+            }
+
             a{
                 text-decoration: none;
                 color: #707070;
                 font-family: $montsans;
                 font-size: 20px;
+                @include xs{
+                    color: black;
+                }
 
                 &:nth-of-type(3){
                    font-weight: bold; 
                 }
+            }
+        }
+
+        .burger{
+            cursor: pointer;
+            display: none;
+            gap: 6px;
+            transform: rotate(90deg);
+
+            @include mobileS{
+                display: flex;
+            }
+
+            div{
+                border-radius: 25px;
+                height: 30px;
+                background-color: black;
+                width: 6px;
             }
         }
     }

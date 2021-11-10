@@ -76,19 +76,41 @@ header nav ul {
   display: flex;
   gap: 96px;
 }
+@media screen and (max-width: 450px) {
+  header nav ul {
+    display: none;
+  }
+}
 header nav ul a {
   text-decoration: none;
   color: #707070;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
-@media screen and (min-width: 1930px) {
+@media screen and (max-width: 800px) {
   header nav ul a {
-    font-size: 27px;
+    color: black;
   }
 }
 header nav ul a:nth-of-type(3) {
   font-weight: bold;
+}
+header nav .burger {
+  cursor: pointer;
+  display: none;
+  gap: 6px;
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 450px) {
+  header nav .burger {
+    display: flex;
+  }
+}
+header nav .burger div {
+  border-radius: 25px;
+  height: 30px;
+  background-color: black;
+  width: 6px;
 }
 
 .contacts-body {
@@ -97,6 +119,11 @@ header nav ul a:nth-of-type(3) {
 .contacts-body .content {
   display: flex;
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .contacts-body .content {
+    flex-direction: column;
+  }
 }
 .contacts-body .content .contact-part {
   width: 50%;
@@ -107,9 +134,20 @@ header nav ul a:nth-of-type(3) {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 800px) {
+  .contacts-body .content .contact-part {
+    width: 100%;
+  }
+}
 .contacts-body .content .contact-part .contact {
   width: 64%;
   margin-left: 11.25%;
+}
+@media screen and (max-width: 450px) {
+  .contacts-body .content .contact-part .contact {
+    width: 100%;
+    margin: 0;
+  }
 }
 .contacts-body .content .contact-part .contact h2 {
   font-family: "Montserrat", sans-serif;
@@ -119,16 +157,50 @@ header nav ul a:nth-of-type(3) {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.41);
   margin-bottom: 5%;
 }
+@media screen and (max-width: 450px) {
+  .contacts-body .content .contact-part .contact h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
 .contacts-body .content .contact-part .contact div {
   display: flex;
   gap: 25px;
   align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .contacts-body .content .contact-part .contact div {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacts-body .content .contact-part .contact div:nth-of-type(3) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.contacts-body .content .contact-part .contact div img {
+  width: 45px;
+  height: 45px;
 }
 .contacts-body .content .contact-part .contact div p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 31px;
+}
+@media screen and (max-width: 800px) {
+  .contacts-body .content .contact-part .contact div p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacts-body .content .contact-part .contact div p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .contacts-body .content .contact-part .contact .social {
   display: flex;
@@ -153,14 +225,30 @@ header nav ul a:nth-of-type(3) {
   justify-content: center;
   place-items: center;
 }
+@media screen and (max-width: 800px) {
+  .contacts-body .content .contact-part .contact .social a {
+    width: 45px;
+    height: 45px;
+  }
+}
 .contacts-body .content .contact-part .contact .social a i {
   font-size: 32px;
   color: #111740;
+}
+@media screen and (max-width: 800px) {
+  .contacts-body .content .contact-part .contact .social a i {
+    font-size: 24px;
+  }
 }
 .contacts-body .content .contact-part .contact .social p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .contacts-body .content .contact-part .contact .social p {
+    font-size: 16px;
+  }
 }
 .contacts-body .content .form-part {
   width: 50%;
@@ -171,12 +259,23 @@ header nav ul a:nth-of-type(3) {
   flex-direction: column;
   padding-left: 5%;
 }
+@media screen and (max-width: 800px) {
+  .contacts-body .content .form-part {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
 .contacts-body .content .form-part h2 {
   color: #111740;
   font-size: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: medium;
   margin-top: 10%;
+}
+@media screen and (max-width: 450px) {
+  .contacts-body .content .form-part h2 {
+    text-align: center;
+  }
 }
 .contacts-body .content .form-part form {
   display: flex;
@@ -186,6 +285,11 @@ header nav ul a:nth-of-type(3) {
   width: 100%;
   height: 100%;
   margin-top: 1%;
+}
+@media screen and (max-width: 800px) {
+  .contacts-body .content .form-part form {
+    align-items: center;
+  }
 }
 .contacts-body .content .form-part form input {
   border: 3px solid #111740;
@@ -238,6 +342,12 @@ header nav ul a:nth-of-type(3) {
   font-size: 34px;
   padding: 20px 60px;
   border-radius: 18px;
+}
+@media screen and (max-width: 450px) {
+  .contacts-body .content .form-part form button {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
