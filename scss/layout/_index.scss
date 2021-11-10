@@ -144,14 +144,12 @@
     flex-direction: column;
 
     .valeur{
-        background-color: rgba(137, 43, 226, 0.234);
         width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: row;
 
         div{
-            background-color: rgba(255, 0, 0, 0.227);
             width: 20%;
             height: 100%;
         }
@@ -183,6 +181,11 @@
                 
                 font-weight: 100;
             }
+
+            img{
+                padding: 50px 50px;
+            }
+
 
         }
 
