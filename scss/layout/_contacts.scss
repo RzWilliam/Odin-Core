@@ -135,19 +135,23 @@
                 textarea{
                     border: 3px solid #111740 ;
                     width: 80%;
-                    height: 30%;
+                    height: 28vh;
                     margin-top: 30px;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 200;
-                    font-size: 24px;
                     text-align: left;
                     text-indent: 20px;
                     color: rgba($color: #000000, $alpha: 0.5);
                     resize: none;
                 }
 
+                textarea::placeholder{
+                    line-height: 50px;
+                    color: rgba($color: #000000, $alpha: 0.5);
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 200;
+                    font-size: 24px;
+                }
+
                 button{
-                    width: 30%;
                     border: none;
                     margin-top: 50px;
                     background-color: #111740;
