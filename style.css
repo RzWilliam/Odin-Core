@@ -137,12 +137,13 @@ header {
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column; }
+      align-items: flex-start;
+      flex-direction: column;
+      margin-left: 10%; }
       .contacts-body .content .form-part form {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         gap: 5%;
         width: 100%; }
@@ -170,5 +171,16 @@ header {
           text-indent: 20px;
           color: rgba(0, 0, 0, 0.5);
           resize: none; }
+        .contacts-body .content .form-part form button {
+          width: 30%;
+          border: none;
+          margin-top: 30px;
+          background-color: #111740;
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: medium;
+          font-size: 34px;
+          padding: 10px 20px 10px 20px;
+          border-radius: 18px; }
 
 /*# sourceMappingURL=style.css.map */
