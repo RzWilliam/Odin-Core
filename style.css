@@ -371,6 +371,20 @@ header {
       padding: 20px 50px;
       background-color: white;
       border-radius: 32px; }
+  .service div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .service div:nth-child(2) section {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      width: 100%; }
+    .service div:nth-child(2) section:nth-child(1) {
+      padding-left: 22px; }
 
 .partner {
   width: 100%;
@@ -380,6 +394,10 @@ header {
   .partner div {
     width: 50%;
     height: 100%; }
+  .partner div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .partner div:nth-child(2) {
     background-color: #101640;
     display: flex;
