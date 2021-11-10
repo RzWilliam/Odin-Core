@@ -327,5 +327,31 @@ header {
   to {
     opacity: 0;
     background-color: transparent; } }
+.service_container {
+  width: 100%;
+  height: 100vh;
+  background-color: royalblue; }
+
+.service {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row; }
+  .service div {
+    width: 50%;
+    height: 100%; }
+  .service div:nth-child(1) {
+    background-color: #101640; }
+
+.partner {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row; }
+  .partner div {
+    width: 50%;
+    height: 100%; }
+  .partner div:nth-child(2) {
+    background-color: #101640; }
 
 /*# sourceMappingURL=style.css.map */
