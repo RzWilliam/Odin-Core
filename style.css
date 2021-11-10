@@ -430,4 +430,46 @@ header {
       border-radius: 32px;
       margin-bottom: 50px; }
 
+.valeur_container {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column; }
+  .valeur_container .valeur {
+    background-color: rgba(137, 43, 226, 0.234);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; }
+    .valeur_container .valeur div {
+      background-color: rgba(255, 0, 0, 0.227);
+      width: 20%;
+      height: 100%; }
+    .valeur_container .valeur div:nth-child(2) {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .valeur_container .valeur div:nth-child(2) h1 {
+        color: #111740;
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600; }
+      .valeur_container .valeur div:nth-child(2) p, .valeur_container .valeur div:nth-child(2) h2 {
+        color: #707070;
+        font-size: 31px;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 400;
+        text-align: center; }
+      .valeur_container .valeur div:nth-child(2) h2 {
+        font-weight: 100; }
+    .valeur_container .valeur div:nth-child(1), .valeur_container .valeur div:nth-child(3) {
+      background-image: url("img/runes1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    .valeur_container .valeur div:nth-child(3) {
+      background-image: url("img/runes2.png"); }
+
 /*# sourceMappingURL=style.css.map */
