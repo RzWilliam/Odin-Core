@@ -139,7 +139,7 @@ header {
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      margin-left: 5%; }
+      padding-left: 5%; }
       .contacts-body .content .form-part h2 {
         color: #111740;
         font-size: 45px;
@@ -152,11 +152,11 @@ header {
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        margin-top: 5%; }
+        margin-top: 1%; }
         .contacts-body .content .form-part form input {
           border: 3px solid #111740;
           width: 80%;
-          height: 60px;
+          height: 6vh;
           margin-top: 30px;
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
@@ -174,7 +174,7 @@ header {
         .contacts-body .content .form-part form textarea {
           border: 3px solid #111740;
           width: 80%;
-          height: 300px;
+          height: 40vh;
           margin-top: 30px;
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
