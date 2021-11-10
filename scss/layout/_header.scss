@@ -7,7 +7,7 @@
 }
 
 header{
-    padding: 1.5% 3% 0;
+    padding: 0 3%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -28,7 +28,10 @@ header{
                 text-decoration: none;
                 color: #707070;
                 font-family: $montsans;
-                font-size: 27px;
+                font-size: 20px;
+                @include xl{
+                    font-size: 27px;
+                }
 
                 &:nth-of-type(3){
                    font-weight: bold; 

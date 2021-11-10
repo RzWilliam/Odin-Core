@@ -136,15 +136,19 @@
                     border: 3px solid #111740 ;
                     width: 80%;
                     height: 28vh;
+                    font-size: 18px;
+                    line-height: 60px;
                     margin-top: 30px;
                     text-align: left;
                     text-indent: 20px;
                     color: rgba($color: #000000, $alpha: 0.5);
+                    font-family: 'Montserrat', sans-serif;
                     resize: none;
+                    color: black;
                 }
 
                 textarea::placeholder{
-                    line-height: 50px;
+                    line-height: 60px;
                     color: rgba($color: #000000, $alpha: 0.5);
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 200;
@@ -153,18 +157,16 @@
 
                 button{
                     border: none;
-                    margin-top: 50px;
+                    margin-top: 5%;
                     background-color: #111740;
                     color: white;
                     font-family: 'Montserrat', sans-serif;
-                    font-weight: medium;
+                    font-weight: 500;
                     font-size: 34px;
-                    padding: 20px 30px 20px 30px;
+                    padding: 20px 60px;
                     border-radius: 18px;
                 }
-
             }
         }
-
     }   
 }
