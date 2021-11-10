@@ -139,19 +139,31 @@ header {
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      margin-left: 10%; }
+      margin-left: 5%; }
+      .contacts-body .content .form-part h2 {
+        color: #111740;
+        font-size: 45px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: medium;
+        margin-top: 10%; }
       .contacts-body .content .form-part form {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        gap: 5%;
-        width: 100%; }
+        width: 100%;
+        margin-top: 5%; }
         .contacts-body .content .form-part form input {
           border: 3px solid #111740;
           width: 80%;
           height: 60px;
-          margin-top: 30px; }
+          margin-top: 30px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 200;
+          font-size: 24px;
+          text-align: left;
+          text-indent: 20px;
+          color: black; }
         .contacts-body .content .form-part form input::placeholder {
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
@@ -162,7 +174,7 @@ header {
         .contacts-body .content .form-part form textarea {
           border: 3px solid #111740;
           width: 80%;
-          height: 200px;
+          height: 300px;
           margin-top: 30px;
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
@@ -174,13 +186,13 @@ header {
         .contacts-body .content .form-part form button {
           width: 30%;
           border: none;
-          margin-top: 30px;
+          margin-top: 50px;
           background-color: #111740;
           color: white;
           font-family: 'Montserrat', sans-serif;
           font-weight: medium;
           font-size: 34px;
-          padding: 10px 20px 10px 20px;
+          padding: 20px 30px 20px 30px;
           border-radius: 18px; }
 
 /*# sourceMappingURL=style.css.map */
