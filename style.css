@@ -65,7 +65,7 @@ header {
       list-style: none;
       display: flex;
       gap: 96px; }
-      @media screen and (max-width: 520px) {
+      @media screen and (max-width: 560px) {
         header nav ul {
           display: none; } }
       header nav ul a {
@@ -83,7 +83,7 @@ header {
       display: none;
       gap: 6px;
       transform: rotate(90deg); }
-      @media screen and (max-width: 520px) {
+      @media screen and (max-width: 560px) {
         header nav .burger {
           display: flex; } }
       header nav .burger div {

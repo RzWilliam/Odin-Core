@@ -6,6 +6,13 @@
 
 @mixin mobileS{
     @media screen and (max-width:520px){
-        @content
+        @content;
     }
+}
+
+@mixin burger{
+    @media screen and (max-width: 560px){
+        @content;
+    }
+    
 }
