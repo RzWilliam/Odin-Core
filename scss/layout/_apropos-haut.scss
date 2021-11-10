@@ -1,0 +1,49 @@
+.background-container{
+    background-image: url(img/background_index.png);
+    background-size: cover;
+    background-position: center;
+    height: 52vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    .title-logo{
+        display: flex;
+        align-items: center;
+        
+
+        h2{
+            font-family: $montsans;
+            font-weight: 600;
+            font-size: 58px;
+            color: white;
+        }
+    }
+    .studio{
+        height: 7.5vh;
+        position: absolute;
+        bottom: -7%;
+        text-align: center;
+        background-color: #101640;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px;
+
+        h3{
+            font-family: $montsans;
+            font-size: 32px;
+            color: white;
+        }
+
+        &:after{
+            content: "Site interne & Application";
+            color: #707070;
+            position: absolute;
+            bottom: -57%;
+            font-family: $montsans;
+            font-size: 26px;
+            font-weight: 200;
+        }
+    }
+}
