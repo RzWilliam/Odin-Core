@@ -330,7 +330,10 @@ header {
 .service_container {
   width: 100%;
   height: 100vh;
-  background-color: royalblue; }
+  background-image: url("img/background_index_mountain.png");
+  background-repeat: no-repeat;
+  background-size: 100% 125vh;
+  background-position: center; }
 
 .service {
   width: 100%;
