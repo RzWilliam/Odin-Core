@@ -152,11 +152,12 @@ header {
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
+        height: 100%;
         margin-top: 1%; }
         .contacts-body .content .form-part form input {
           border: 3px solid #111740;
           width: 80%;
-          height: 6vh;
+          height: 5%;
           margin-top: 30px;
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
@@ -174,7 +175,7 @@ header {
         .contacts-body .content .form-part form textarea {
           border: 3px solid #111740;
           width: 80%;
-          height: 40vh;
+          height: 30%;
           margin-top: 30px;
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
