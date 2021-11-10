@@ -63,6 +63,7 @@ header {
   padding: 0 3%;
   width: 100%;
   position: absolute;
+  z-index: 5;
   top: 0;
   left: 0;
 }
@@ -454,6 +455,43 @@ header nav .burger div {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-weight: 200;
+}
+
+.infos-part {
+  height: 63%;
+  position: relative;
+  overflow: hidden;
+}
+.infos-part img {
+  position: absolute;
+  bottom: 6%;
+  right: -4.5%;
+}
+.infos-part img:nth-of-type(2) {
+  position: absolute;
+  left: -4.5%;
+  bottom: 6%;
+}
+.infos-part .infos {
+  width: 64%;
+  margin: 8% auto 5%;
+}
+.infos-part .infos h3 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 40px;
+  color: #111740;
+}
+.infos-part .infos p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #707070;
+  text-align: center;
+  margin-top: 4.5%;
+}
+.infos-part .infos p span {
+  font-weight: 200;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
