@@ -29,9 +29,6 @@ header{
                 color: #707070;
                 font-family: $montsans;
                 font-size: 20px;
-                @include xl{
-                    font-size: 27px;
-                }
 
                 &:nth-of-type(3){
                    font-weight: bold; 
