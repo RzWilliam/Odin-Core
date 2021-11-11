@@ -458,7 +458,6 @@ header nav .burger div {
 }
 
 .infos-part {
-  height: 63%;
   position: relative;
   overflow: hidden;
 }
@@ -466,6 +465,7 @@ header nav .burger div {
   position: absolute;
   bottom: 6%;
   right: -4.5%;
+  z-index: -1;
 }
 .infos-part img:nth-of-type(2) {
   position: absolute;
@@ -474,7 +474,7 @@ header nav .burger div {
 }
 .infos-part .infos {
   width: 64%;
-  margin: 8% auto 5%;
+  margin: 8% auto 6%;
 }
 .infos-part .infos h3 {
   font-family: "Segoe UI";
@@ -488,10 +488,72 @@ header nav .burger div {
   color: #707070;
   text-align: center;
   margin-top: 4.5%;
+  line-height: 1.5;
 }
 .infos-part .infos p span {
   font-weight: 200;
   font-style: italic;
+}
+
+.projects-part {
+  display: flex;
+  background-color: #101640;
+}
+.projects-part .text-part {
+  width: 43%;
+  padding-left: 4%;
+  padding: 12% 0 6% 4%;
+}
+.projects-part .text-part h3 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 45px;
+  color: white;
+}
+.projects-part .text-part p {
+  font-size: 31px;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+  margin-top: 7%;
+}
+.projects-part .text-part .more {
+  background-color: white;
+  padding: 30px;
+  width: 56%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto 0;
+  gap: 30px;
+  border-radius: 32px;
+}
+.projects-part .text-part .more p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 200;
+  margin: 0;
+}
+.projects-part .text-part .more i {
+  font-size: 48px;
+  color: #707070;
+}
+.projects-part .cards-part {
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 25%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4% 0 10%;
+}
+.projects-part .cards-part div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
