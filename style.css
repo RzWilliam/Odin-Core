@@ -542,18 +542,101 @@ header nav .burger div {
 }
 .projects-part .cards-part {
   width: 57%;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
-  gap: 0 25%;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   padding: 0 4% 0 10%;
 }
 .projects-part .cards-part div {
   width: 100px;
   height: 100px;
   background-color: white;
+}
+
+.team-part .arrow {
+  cursor: pointer;
+}
+.team-part .bastien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 6% 8%;
+  gap: 60px;
+}
+.team-part .bastien .infos {
+  padding: 0 5%;
+}
+.team-part .bastien .infos h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #111740;
+}
+.team-part .bastien .infos h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  color: #707070;
+  margin-top: 7%;
+}
+.team-part .bastien .infos p {
+  font-size: 31px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  margin-top: 7%;
+  color: #707070;
+}
+.team-part .bastien .infos .social {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+.team-part .bastien .infos .social div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.team-part .bastien .infos .social a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  padding: 20px;
+  width: 66px;
+  height: 66px;
+  display: grid;
+  border: 5px solid #111740;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+@media screen and (max-width: 800px) {
+  .team-part .bastien .infos .social a {
+    width: 45px;
+    height: 45px;
+  }
+}
+.team-part .bastien .infos .social a i {
+  font-size: 32px;
+  color: #111740;
+}
+@media screen and (max-width: 800px) {
+  .team-part .bastien .infos .social a i {
+    font-size: 24px;
+  }
+}
+.team-part .bastien .infos .social p {
+  font-family: "Montserrat", sans-serif;
+  color: #111740;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .team-part .bastien .infos .social p {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -144,12 +144,10 @@
 
         .cards-part{
             width: 57%;
-            display: flex;
+            display: inline-flex;
             justify-content: space-between;
-            gap: 0 25%;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: center;
             padding: 0 4% 0 10%;
 
             div{
@@ -160,3 +158,95 @@
             }
         }
     }
+
+.team-part{
+
+    .arrow{
+        cursor: pointer;
+    }
+
+    .bastien{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10% 6% 8%;
+        gap: 60px;
+
+        .infos{
+            padding: 0 5%;
+
+            h2{
+                font-family: $montsans;
+                font-weight: bold;
+                font-size: 60px;
+                color: #111740;
+            }
+    
+            h3{
+               font-family: $montsans;
+               font-size: 35px;
+               color: #707070;
+               margin-top: 7%;
+            }
+    
+            p{
+                font-size: 31px;
+                font-family: $montsans;
+                font-weight: 200;
+                margin-top: 7%;
+                color: #707070;
+            }
+
+            .social{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 10%;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                a{
+                    text-decoration: none;
+                    background-color: white;
+                    border-radius: 50px;
+                    padding: 20px;
+                    width: 66px;
+                    height: 66px;
+                    display: grid;
+                    border: 5px solid #111740;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    @include xs{
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    i{
+                        font-size: 32px;
+                        color: #111740;
+                        @include xs{
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                p{
+                    font-family: $montsans;
+                    color: #111740;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 20px;
+                    @include xs{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
