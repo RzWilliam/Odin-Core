@@ -18,3 +18,35 @@ document.querySelector('.burger_cross').addEventListener('click', function(){
     
 });
 
+let arrow = document.querySelectorAll('.arrow');
+let members = document.querySelectorAll('.member');
+let nbMembers = members.length;
+let x = 0;
+
+arrow.forEach(function(item){
+    item.addEventListener("click", function(){
+        members[x].classList.remove('active');
+
+        if(x < nbMembers - 1){
+            x++;
+        } else {
+            x = 0;
+        }
+
+        console.log(x)
+
+        members[x].classList.add('active')
+        })
+})
+
+// arrow.addEventListener("click", function(){
+//     members[x].classList.remove('active');
+//     if(x < nbMembers - 1){
+//         x++;
+//     }else{
+//         x = 0;
+//     }
+
+//     members[x].classList.add('active');
+// })
+

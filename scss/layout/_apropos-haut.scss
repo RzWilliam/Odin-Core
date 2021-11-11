@@ -165,12 +165,25 @@
         cursor: pointer;
     }
 
-    .bastien{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10% 6% 8%;
-        gap: 60px;
+    .member{
+        display: none;
+
+        &.active{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10% 6% 8%;
+            gap: 60px;
+            animation: fade 1s;
+            @keyframes fade {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+        }
 
         .infos{
             padding: 0 5%;

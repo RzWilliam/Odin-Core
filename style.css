@@ -557,48 +557,60 @@ header nav .burger div {
 .team-part .arrow {
   cursor: pointer;
 }
-.team-part .bastien {
+.team-part .member {
+  display: none;
+}
+.team-part .member.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10% 6% 8%;
   gap: 60px;
+  animation: fade 1s;
 }
-.team-part .bastien .infos {
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.team-part .member .infos {
   padding: 0 5%;
 }
-.team-part .bastien .infos h2 {
+.team-part .member .infos h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 60px;
   color: #111740;
 }
-.team-part .bastien .infos h3 {
+.team-part .member .infos h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   color: #707070;
   margin-top: 7%;
 }
-.team-part .bastien .infos p {
+.team-part .member .infos p {
   font-size: 31px;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   margin-top: 7%;
   color: #707070;
 }
-.team-part .bastien .infos .social {
+.team-part .member .infos .social {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10%;
 }
-.team-part .bastien .infos .social div {
+.team-part .member .infos .social div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.team-part .bastien .infos .social a {
+.team-part .member .infos .social a {
   text-decoration: none;
   background-color: white;
   border-radius: 50px;
@@ -612,21 +624,21 @@ header nav .burger div {
   place-items: center;
 }
 @media screen and (max-width: 800px) {
-  .team-part .bastien .infos .social a {
+  .team-part .member .infos .social a {
     width: 45px;
     height: 45px;
   }
 }
-.team-part .bastien .infos .social a i {
+.team-part .member .infos .social a i {
   font-size: 32px;
   color: #111740;
 }
 @media screen and (max-width: 800px) {
-  .team-part .bastien .infos .social a i {
+  .team-part .member .infos .social a i {
     font-size: 24px;
   }
 }
-.team-part .bastien .infos .social p {
+.team-part .member .infos .social p {
   font-family: "Montserrat", sans-serif;
   color: #111740;
   text-align: center;
@@ -634,7 +646,7 @@ header nav .burger div {
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  .team-part .bastien .infos .social p {
+  .team-part .member .infos .social p {
     font-size: 16px;
   }
 }
