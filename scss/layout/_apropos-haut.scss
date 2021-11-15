@@ -160,9 +160,22 @@
     }
 
 .team-part{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 
     .arrow{
         cursor: pointer;
+
+        &.left{
+            margin-left: 4%;
+        }
+
+        &.right{
+            margin-right: 4%;
+        }
     }
 
     .member{
@@ -170,17 +183,41 @@
 
         &.active{
             display: flex;
+            position: relative;
             justify-content: space-between;
             align-items: center;
+            height: 620px;
+            width: 100%;
             margin: 10% 6% 8%;
             gap: 60px;
-            animation: fade 1s;
-            @keyframes fade {
+            
+
+            &.left{
+                animation: slide-left 1.5s;
+            }
+
+            &.right{
+                animation: slide-right 1.5s;
+            }
+
+            @keyframes slide-left {
                 from {
                 opacity: 0;
+                right: 3000px;
                 }
-                to {
+                100% {
                 opacity: 1;
+                right: 0;
+                }
+            }
+
+            @keyframes slide-right{
+                0% {
+                    opacity: 0;
+                    left: 3000px;
+                }100% {
+                    opacity: 1;
+                    left: 0;
                 }
             }
         }
