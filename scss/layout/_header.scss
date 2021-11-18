@@ -20,6 +20,12 @@ header{
         justify-content: space-between;
         align-items: center;
 
+        img{
+            @include mobileS{
+                width: 75%;
+            }
+        }
+
         ul{
             list-style: none;
             display: flex;
@@ -38,7 +44,7 @@ header{
                     color: black;
                 }
 
-                &:nth-of-type(3){
+                &.active{
                    font-weight: bold; 
                 }
             }
@@ -61,5 +67,14 @@ header{
                 width: 6px;
             }
         }
+    }
+}
+
+.white{
+    a{
+        color: white;
+    }
+    .burger div{
+        background-color: white;
     }
 }

@@ -14,5 +14,10 @@
     @media screen and (max-width: 560px){
         @content;
     }
-    
+}
+
+@mixin xl{
+    @media screen and (min-width: 1500px){
+        @content;
+    }
 }
