@@ -590,9 +590,9 @@ header nav .burger div {
 }
 .projects-part .text-part .more {
   background-color: white;
-  padding: 30px;
-  width: 56%;
+  padding: 15px 30px;
   display: flex;
+  width: 60%;
   align-items: center;
   justify-content: center;
   margin: 10% auto 0;
@@ -601,7 +601,6 @@ header nav .burger div {
 }
 @media screen and (max-width: 520px) {
   .projects-part .text-part .more {
-    width: 60%;
     padding: 15px;
   }
 }
@@ -631,8 +630,10 @@ header nav .burger div {
   display: inline-flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 200px 0;
   align-items: center;
   padding: 0 4% 0 10%;
+  gap: 90px;
 }
 @media screen and (max-width: 520px) {
   .projects-part .cards-part {
