@@ -1,0 +1,109 @@
+.faq-background-container{
+    background-image: url(img/background_index.png);
+    background-size: cover;
+    background-position: center;
+    height: 42vh;
+    display: grid;
+    place-items: center;
+
+    .text{
+        margin-top: 50px;
+        padding: 20px 10%;
+        background-color: #101640;
+        color: white;
+        text-align: center;
+
+        p{
+            font-weight: 200;
+            font-size: 24px;
+            font-family: $montsans;
+        }
+
+        h1{
+            font-family: $montsans;
+            font-size: 48px;
+            
+        }
+    }
+}
+
+.faq-part{
+    margin: 5% 0 0 4%;
+
+    h2{
+       font-family: 'Segoe UI';
+       font-weight: 600;
+       font-size: 40px;
+       color: #101640; 
+    }
+
+    .questions-part{
+        margin: 4% 0 0 2%;
+
+        h3{
+            font-family: $montsans;
+            font-size: 24px;
+            font-weight: 500;
+            color: #707070;
+            max-width: 650px;
+        }
+
+        p{
+            margin: 2% 0;
+            font-family: $montsans;
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 1000px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.ask-part{
+    margin: 5% 0 0 4%;
+    h2{
+        font-family: 'Segoe UI';
+        font-weight: 600;
+        font-size: 40px;
+        color: #101640; 
+     }
+
+     form{
+         display: flex;
+         margin: 50px 0 0 4%;
+         flex-direction: column;
+         width: 40%;
+         align-items: flex-end;
+
+         textarea{
+            border: 1px solid #111740 ;
+            width: 100%;
+            height: 28vh;
+            font-size: 18px;
+            line-height: 60px;     
+            text-align: left;
+            text-indent: 20px;
+            color: rgba($color: #000000, $alpha: 0.5);
+            font-family: 'Montserrat', sans-serif;
+            resize: none;
+            color: black;
+         }
+    
+         button{
+            border: none;
+            margin-top: 5%;
+            background-color: #111740;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            padding: 20px 60px;
+            border-radius: 18px;
+    
+            @include mobileS{
+                padding: 10px 30px;
+                font-size: 17px;
+            }
+        }
+     }
+}

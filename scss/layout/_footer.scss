@@ -1,0 +1,102 @@
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    section{
+        width: 100%;
+        background-color: #111740;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section:nth-child(1){
+        padding-top: 50%;
+        background-color: transparent;
+        background-image: url('img/footer_viking.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        @include mobileS{
+            background-size: contain;
+        }
+    }
+
+    section:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 0;
+        align-items: center;
+        flex-direction: row;
+        @include mobileS{
+            flex-direction: column;
+        }
+
+        div{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            @include mobileS{
+                justify-content: center;
+            }
+        }
+
+        div:nth-child(1){
+            width: 60%;
+            @include mobileS{
+                width: 100%;
+            }
+            
+            img{
+                width: 12%;
+                @include mobileS{
+                    width: 25%;
+                }
+            }
+
+            p{
+                color: white;
+                font-size: 58px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                @include mobileS{
+                    font-size: 24px;
+                }
+            }
+
+            p:nth-child(1){
+                padding-left: 60px;
+                @include mobileS{
+                    padding: 0;
+                }
+            }
+        }
+
+        div:nth-child(2){
+            @include mobileS{
+                margin-top: 10%;
+                gap: 20px;
+            }
+            a{
+                text-decoration: none;
+                padding-right: 70px;
+                color: white;
+                font-size: 27px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: normal; 
+                @include mobileS{
+                    font-size: 16px;
+                    padding: 0 0;
+                }
+            }
+
+            a:nth-child(1){
+                font-weight: 600;
+            }
+        }
+    }
+}

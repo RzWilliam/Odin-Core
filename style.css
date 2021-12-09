@@ -126,6 +126,115 @@ header nav .burger div {
   background-color: white;
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer section {
+  width: 100%;
+  background-color: #111740;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer section:nth-child(1) {
+  padding-top: 50%;
+  background-color: transparent;
+  background-image: url("img/footer_viking.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(1) {
+    background-size: contain;
+  }
+}
+footer section:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) {
+    flex-direction: column;
+  }
+}
+footer section:nth-child(2) div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div {
+    justify-content: center;
+  }
+}
+footer section:nth-child(2) div:nth-child(1) {
+  width: 60%;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div:nth-child(1) {
+    width: 100%;
+  }
+}
+footer section:nth-child(2) div:nth-child(1) img {
+  width: 12%;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div:nth-child(1) img {
+    width: 25%;
+  }
+}
+footer section:nth-child(2) div:nth-child(1) p {
+  color: white;
+  font-size: 58px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div:nth-child(1) p {
+    font-size: 24px;
+  }
+}
+footer section:nth-child(2) div:nth-child(1) p:nth-child(1) {
+  padding-left: 60px;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div:nth-child(1) p:nth-child(1) {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div:nth-child(2) {
+    margin-top: 10%;
+    gap: 20px;
+  }
+}
+footer section:nth-child(2) div:nth-child(2) a {
+  text-decoration: none;
+  padding-right: 70px;
+  color: white;
+  font-size: 27px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+@media screen and (max-width: 520px) {
+  footer section:nth-child(2) div:nth-child(2) a {
+    font-size: 16px;
+    padding: 0 0;
+  }
+}
+footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
+  font-weight: 600;
+}
+
 .contacts-body {
   height: 100vh;
 }
@@ -1272,113 +1381,104 @@ header nav .burger div {
   }
 }
 
-footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.faq-background-container {
+  background-image: url(img/background_index.png);
+  background-size: cover;
+  background-position: center;
+  height: 42vh;
+  display: grid;
+  place-items: center;
 }
-footer section {
+.faq-background-container .text {
+  margin-top: 50px;
+  padding: 20px 10%;
+  background-color: #101640;
+  color: white;
+  text-align: center;
+}
+.faq-background-container .text p {
+  font-weight: 200;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+.faq-background-container .text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+}
+
+.faq-part {
+  margin: 5% 0 0 4%;
+}
+.faq-part h2 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 40px;
+  color: #101640;
+}
+.faq-part .questions-part {
+  margin: 4% 0 0 2%;
+}
+.faq-part .questions-part h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #707070;
+  max-width: 650px;
+}
+.faq-part .questions-part p {
+  margin: 2% 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 1000px;
+  padding-right: 20px;
+}
+
+.ask-part {
+  margin: 5% 0 0 4%;
+}
+.ask-part h2 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 40px;
+  color: #101640;
+}
+.ask-part form {
+  display: flex;
+  margin: 50px 0 0 4%;
+  flex-direction: column;
+  width: 40%;
+  align-items: flex-end;
+}
+.ask-part form textarea {
+  border: 1px solid #111740;
   width: 100%;
+  height: 28vh;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: left;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  color: black;
+}
+.ask-part form button {
+  border: none;
+  margin-top: 5%;
   background-color: #111740;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer section:nth-child(1) {
-  padding-top: 66%;
-  background-color: transparent;
-  background-image: url("img/footer_viking.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(1) {
-    background-size: contain;
-  }
-}
-footer section:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  padding: 5% 0;
-  align-items: center;
-  flex-direction: row;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) {
-    flex-direction: column;
-  }
-}
-footer section:nth-child(2) div {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) div {
-    justify-content: center;
-  }
-}
-footer section:nth-child(2) div:nth-child(1) {
-  width: 60%;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) div:nth-child(1) {
-    width: 100%;
-  }
-}
-footer section:nth-child(2) div:nth-child(1) img {
-  width: 12%;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) div:nth-child(1) img {
-    width: 25%;
-  }
-}
-footer section:nth-child(2) div:nth-child(1) p {
   color: white;
-  font-size: 58px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 28px;
+  padding: 20px 60px;
+  border-radius: 18px;
 }
 @media screen and (max-width: 520px) {
-  footer section:nth-child(2) div:nth-child(1) p {
-    font-size: 24px;
+  .ask-part form button {
+    padding: 10px 30px;
+    font-size: 17px;
   }
-}
-footer section:nth-child(2) div:nth-child(1) p:nth-child(1) {
-  padding-left: 60px;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) div:nth-child(1) p:nth-child(1) {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) div:nth-child(2) {
-    margin-top: 10%;
-    gap: 20px;
-  }
-}
-footer section:nth-child(2) div:nth-child(2) a {
-  text-decoration: none;
-  padding-right: 70px;
-  color: white;
-  font-size: 27px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
-}
-@media screen and (max-width: 520px) {
-  footer section:nth-child(2) div:nth-child(2) a {
-    font-size: 16px;
-    padding: 0 0;
-  }
-}
-footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
