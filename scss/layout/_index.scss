@@ -92,8 +92,9 @@
             font-weight: 600;
             font-size: 40px;
             color: #111740;
+            text-align: center;
+
             @include mobileS{
-                text-align: center;
                 font-size: 28px;
             }
         }
@@ -811,3 +812,46 @@
         }
     }
 }
+
+@media only screen and (max-width: 1032px) {
+    footer{
+        section:nth-child(1){
+            background-size: contain;
+        }
+
+        section:nth-child(2){           
+            div:nth-child(1){
+                p{
+                    font-size: 38px;
+                }
+            }
+    }
+
+    
+  }}
+
+  @media only screen and (max-width: 880px) {
+    
+    footer{
+        section:nth-child(2){
+            flex-direction: column;
+            justify-content: center;
+
+            div:nth-child(1){
+                width: fit-content;
+                p{
+                    font-size: 38px;
+                }
+            }
+
+            div:nth-child(2){
+                width: fit-content;
+                
+                a{
+                    padding-right: 20px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+  }
