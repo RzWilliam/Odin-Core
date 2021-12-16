@@ -115,15 +115,12 @@ header nav .burger {
 header nav .burger div {
   border-radius: 25px;
   height: 30px;
-  background-color: black;
+  background-color: white;
   width: 6px;
 }
 
 .white a {
   color: white;
-}
-.white .burger div {
-  background-color: white;
 }
 
 footer {
@@ -1433,13 +1430,39 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 800px) {
+  .faq-background-container .text p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .faq-background-container .text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
 .faq-background-container .text h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
 }
+@media screen and (max-width: 800px) {
+  .faq-background-container .text h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .faq-background-container .text h1 {
+    font-size: 28px;
+  }
+}
 
 .faq-part {
   margin: 5% 0 0 4%;
+}
+@media screen and (max-width: 520px) {
+  .faq-part {
+    margin: 20px 0;
+  }
 }
 .faq-part h2 {
   font-family: "Segoe UI";
@@ -1447,8 +1470,24 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   font-size: 40px;
   color: #101640;
 }
+@media screen and (max-width: 800px) {
+  .faq-part h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .faq-part h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
 .faq-part .questions-part {
   margin: 4% 0 0 2%;
+}
+@media screen and (max-width: 520px) {
+  .faq-part .questions-part {
+    margin: 30px 0;
+  }
 }
 .faq-part .questions-part h3 {
   font-family: "Montserrat", sans-serif;
@@ -1456,6 +1495,16 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   font-weight: 500;
   color: #707070;
   max-width: 650px;
+}
+@media screen and (max-width: 800px) {
+  .faq-part .questions-part h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .faq-part .questions-part h3 {
+    text-align: center;
+  }
 }
 .faq-part .questions-part p {
   margin: 2% 0;
@@ -1465,9 +1514,22 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   max-width: 1000px;
   padding-right: 20px;
 }
+@media screen and (max-width: 520px) {
+  .faq-part .questions-part p {
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 15px 0;
+    text-align: justify;
+  }
+}
 
 .ask-part {
   margin: 5% 0 0 4%;
+}
+@media screen and (max-width: 520px) {
+  .ask-part {
+    margin: 20px 0 0;
+  }
 }
 .ask-part h2 {
   font-family: "Segoe UI";
@@ -1475,12 +1537,36 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   font-size: 40px;
   color: #101640;
 }
+@media screen and (max-width: 800px) {
+  .ask-part h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .ask-part h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 .ask-part form {
   display: flex;
   margin: 50px 0 0 4%;
   flex-direction: column;
   width: 40%;
   align-items: flex-end;
+}
+@media screen and (max-width: 800px) {
+  .ask-part form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .ask-part form {
+    width: 100%;
+    margin: 30px 0 0;
+    padding: 0 15px;
+    align-items: center;
+  }
 }
 .ask-part form textarea {
   border: 1px solid #111740;
@@ -1506,10 +1592,16 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   padding: 20px 60px;
   border-radius: 18px;
 }
+@media screen and (max-width: 800px) {
+  .ask-part form button {
+    padding: 15px 45px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 520px) {
   .ask-part form button {
     padding: 10px 30px;
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
