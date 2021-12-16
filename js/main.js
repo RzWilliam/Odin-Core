@@ -18,42 +18,41 @@ document.querySelector('.burger_cross').addEventListener('click', function(){
     
 });
 
-let left = document.querySelector('.left');
-let right = document.querySelector('.right');
-let members = document.querySelectorAll('.member');
-let nbMembers = members.length;
-let x = 0;
+if(document.querySelector('.left')){
+    let left = document.querySelector('.left');
+    let right = document.querySelector('.right');
+    let members = document.querySelectorAll('.member');
+    let nbMembers = members.length;
+    let x = 0;
 
-left.addEventListener("click", function(){
-    members[x].classList.remove('active');
-    members[x].classList.remove('left');
-    members[x].classList.remove('right');
+    left.addEventListener("click", function(){
+        members[x].classList.remove('active');
+        members[x].classList.remove('left');
+        members[x].classList.remove('right');
 
-    if(x < nbMembers - 1){
-        x++;
-    }else{
-        x = 0;
-    }
+        if(x < nbMembers - 1){
+            x++;
+        }else{
+            x = 0;
+        }
 
-    members[x].classList.add('active');
-    members[x].classList.add('left');
-})
+        members[x].classList.add('active');
+        members[x].classList.add('left');
+    })
 
-right.addEventListener("click", function(){
-    members[x].classList.remove('active');
-    members[x].classList.remove('left');
-    members[x].classList.remove('right');
+    right.addEventListener("click", function(){
+        members[x].classList.remove('active');
+        members[x].classList.remove('left');
+        members[x].classList.remove('right');
 
-    if(x < nbMembers - 1){
-        x++;
-    }else{
-        x = 0;
-    }
-    
-    members[x].classList.add('active');
-    members[x].classList.add('right');
-
-    
-})
-
+        if(x < nbMembers - 1){
+            x++;
+        }else{
+            x = 0;
+        }
+        
+        members[x].classList.add('active');
+        members[x].classList.add('right');      
+    })
+}
 
