@@ -1,5 +1,9 @@
 // -----------------------HAUT
 
+body{
+    overflow-x: hidden;
+}
+
 .background-container{
     background-image: url(img/background_index.png);
     background-size: cover;
@@ -606,6 +610,10 @@
         img{
             width: auto;
             height: 100%;
+
+            @include mobileS{
+                width: 100%;
+            }
         }
     }
 
