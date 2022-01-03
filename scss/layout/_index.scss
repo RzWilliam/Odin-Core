@@ -454,10 +454,9 @@
     div:nth-child(1){
         background-color: #101640;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
-        padding-left: 50px;
+        justify-content: space-evenly;
         @include mobileS{
             padding: 15% 5%;
             text-align: center;
@@ -467,7 +466,7 @@
         h1{
             font-family: 'Segoe UI',sans-serif;
             font-weight: 700;
-            font-size: 32px;
+            font-size: 25px;
             color: white;
 
             @include mobileS{
@@ -482,13 +481,12 @@
         }
 
         p{
-            padding-top: 30px;
             font-family: 'Segoe UI',sans-serif;
             font-weight: 400;
             font-size: 18px;
             line-height: 27px;
             color: white;
-            padding-bottom: 40px;
+            text-align: center;
 
             @include mobileS{
                 font-size: 14px;
@@ -582,9 +580,9 @@
         background-color: #101640;
         display: flex;
         flex-direction: column;
-        padding-right: 30px;
+        align-items: center;
+        justify-content: space-evenly;
         @include mobileS{
-            padding: 15% 5%;
             text-align: center;
             align-items: center;
         }
@@ -593,15 +591,13 @@
         h1{
             font-family: 'Segoe UI',sans-serif;
             font-weight: 700;
-            font-size: 32px;
+            font-size: 25px;
             color: white;
-            padding-top: 40px;
             text-align: center;
             @include mobileS{
                 font-size: 18px;
                 width: 100%;
                 margin-bottom: 10%;
-                padding: 0;
             }
 
             @include xl{
@@ -610,14 +606,12 @@
         }
 
         p{
-            padding-top: 30px;
             font-family: 'Segoe UI',sans-serif;
             font-weight: 400;
             font-size: 18px;
             line-height: 27px;
             color: white;
-            text-align: left;
-            padding: 15px 100px 0 45px;
+            text-align: center;
             @include mobileS{
                 font-size: 14px;
                 padding: 0;
@@ -631,10 +625,11 @@
             }
         }
 
-        .toContact{
-            display: inline-block;
-            text-align: right;
-            width: 100%;
+        p:nth-child(3){
+            text-align: left;
+        }
+
+        
             a{
                 text-decoration: none;
                 font-family: 'Montserrat', sans-serif;
@@ -643,12 +638,9 @@
                 padding: 20px 50px;
                 background-color: white;
                 border-radius: 32px;
-                margin-bottom: 50px;
-                @include mobileS{
-                    margin-bottom: 0;
                 }
-            }
-        }
+            
+        
 
         
     }
