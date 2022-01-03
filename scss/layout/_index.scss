@@ -153,6 +153,7 @@ body{
         background-color: #101640;
         @include mobileS{
             flex-direction: column;
+            padding-top: 20px;
         }
 
         .text-part{
@@ -186,20 +187,16 @@ body{
                 @include mobileS{
                     font-size: 16px;
                     text-align: center;
+                    margin: 20px 0;
                 }
             }
 
             .more{ 
                 background-color: white;
-                padding: 15px 20px;
-                display: flex;
-                width: 50%;
-                align-items: center;
-                justify-content: center;
-                gap: 30px;
+                padding: 10px 30px;
                 border-radius: 32px;
                 @include mobileS{
-                    padding: 15px;
+                    padding: 8px 24px;
                 }
 
                 p{
@@ -454,7 +451,6 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 125vh;
     background-position: center;
-    margin-bottom: 4%;
 
     @include mobileS{
         display: flex;
@@ -690,6 +686,7 @@ body{
     height: fit-content;
     display: flex;
     flex-direction: column;
+    padding-top: 4%;
     @include mobileS {
         height: 100%;
     }
@@ -748,14 +745,12 @@ body{
                     font-size: 16px;
                     line-height: 24px;
                 }
-
                 @include xl{
-                    font-size: 31px;
+                    font-size: 30px;
                 }
             }
 
-            h2{
-                
+            h2{      
                 font-weight: 100;
             }
 
@@ -770,7 +765,7 @@ body{
             background-size: contain;
             background-position: center;
             @include mobileS{
-                height: 100vh;
+                padding-top: 100%;
                 width: 100%;
             }
             
@@ -782,7 +777,7 @@ body{
             background-size: contain;
             background-position: center;
             @include mobileS{
-                height: 100vh;
+                padding-top: 100%;
                 width: 100%;
             }
         }
