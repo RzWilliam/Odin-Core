@@ -64,19 +64,45 @@
     position: relative;
     overflow: hidden;
 
-    img{
+    .axe{
         position: absolute;
         bottom: 6%;
-        right: -4.5%;
+        right: -7%;
+        transform-origin: bottom center;
         z-index: -1;
+        transform: rotate(90deg);
+        
         @include mobileS{
             display: none;
         }
         
         &:nth-of-type(2){
             position: absolute;
-            left: -4.5%;
+            left: -7%;
             bottom: 6%;
+            transform-origin: bottom center;
+            z-index: -1;
+            transform: rotate(-90deg);
+        }
+
+        &.active:nth-of-type(2){
+            animation: plant-left 1500ms ease-in-out forwards;
+        }
+
+        &.active:first-of-type{
+            animation: plant-right 1500ms ease-in-out forwards;
+        }
+
+        @keyframes plant-left {
+            100%{
+                transform: rotate(5deg);
+            }
+        }
+
+        @keyframes plant-right {
+            100%{
+                transform: rotate(-5deg);
+            }
         }
     }
 
@@ -159,9 +185,9 @@
 
             .more{ 
                 background-color: white;
-                padding: 15px 30px;
+                padding: 15px 20px;
                 display: flex;
-                width: 60%;
+                width: 50%;
                 align-items: center;
                 justify-content: center;
                 margin: 10% auto 0;
@@ -174,7 +200,7 @@
                 p{
                     color: black;
                     font-family: $montsans;
-                    font-size: 45px;
+                    font-size: 32px;
                     font-weight: 200;
                     margin: 0;
                     @include mobileS{
@@ -183,7 +209,7 @@
                 }
 
                 i{
-                    font-size: 48px;
+                    font-size: 36px;
                     color: #707070;
                     @include mobileS{
                         font-size: 24px;

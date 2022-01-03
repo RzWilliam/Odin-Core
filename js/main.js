@@ -18,41 +18,14 @@ document.querySelector('.burger_cross').addEventListener('click', function(){
     
 });
 
-if(document.querySelector('.left')){
-    let left = document.querySelector('.left');
-    let right = document.querySelector('.right');
-    let members = document.querySelectorAll('.member');
-    let nbMembers = members.length;
-    let x = 0;
+let axes = document.querySelectorAll('.axe');
+let background = document.querySelector('.background-container')
 
-    left.addEventListener("click", function(){
-        members[x].classList.remove('active');
-        members[x].classList.remove('left');
-        members[x].classList.remove('right');
-
-        if(x < nbMembers - 1){
-            x++;
-        }else{
-            x = 0;
-        }
-
-        members[x].classList.add('active');
-        members[x].classList.add('left');
-    })
-
-    right.addEventListener("click", function(){
-        members[x].classList.remove('active');
-        members[x].classList.remove('left');
-        members[x].classList.remove('right');
-
-        if(x < nbMembers - 1){
-            x++;
-        }else{
-            x = 0;
-        }
-        
-        members[x].classList.add('active');
-        members[x].classList.add('right');      
-    })
-}
+window.addEventListener('scroll', function() {
+    if(window.scrollY > (background.offsetTop + background.offsetHeight) / 3){
+        axes.forEach(function(axe){
+            axe.classList.add('active');
+        })
+    }
+})
 
