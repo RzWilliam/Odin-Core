@@ -708,8 +708,10 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
 }
 .projects-part .text-part {
   width: 43%;
-  padding-left: 4%;
-  padding: 12% 0 6% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 @media screen and (max-width: 520px) {
   .projects-part .text-part {
@@ -734,7 +736,7 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   font-weight: 300;
   line-height: 1.5;
   color: white;
-  margin-top: 7%;
+  text-align: center;
 }
 @media screen and (max-width: 520px) {
   .projects-part .text-part p {
@@ -749,7 +751,6 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   width: 50%;
   align-items: center;
   justify-content: center;
-  margin: 10% auto 0;
   gap: 30px;
   border-radius: 32px;
 }
@@ -1050,10 +1051,9 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
 .service div:nth-child(1) {
   background-color: #101640;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  padding-left: 50px;
+  justify-content: space-evenly;
 }
 @media screen and (max-width: 520px) {
   .service div:nth-child(1) {
@@ -1065,7 +1065,7 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
 .service div:nth-child(1) h1 {
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 25px;
   color: white;
 }
 @media screen and (max-width: 520px) {
@@ -1081,13 +1081,13 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   }
 }
 .service div:nth-child(1) p {
-  padding-top: 30px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: white;
-  padding-bottom: 40px;
+  text-align: center;
+  padding: 0px 10px;
 }
 @media screen and (max-width: 520px) {
   .service div:nth-child(1) p {
@@ -1174,11 +1174,16 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   justify-content: center;
   align-items: center;
 }
+.partner div:nth-child(1) img {
+  width: auto;
+  height: 100%;
+}
 .partner div:nth-child(2) {
   background-color: #101640;
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 @media screen and (max-width: 520px) {
   .partner div:nth-child(2) {
@@ -1190,9 +1195,8 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
 .partner div:nth-child(2) h1 {
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 25px;
   color: white;
-  padding-top: 40px;
   text-align: center;
 }
 @media screen and (max-width: 520px) {
@@ -1200,7 +1204,6 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
     font-size: 18px;
     width: 100%;
     margin-bottom: 10%;
-    padding: 0;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -1209,14 +1212,13 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   }
 }
 .partner div:nth-child(2) p {
-  padding-top: 30px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: white;
-  text-align: left;
-  padding: 15px 100px 0 45px;
+  text-align: center;
+  padding: 0 10px;
 }
 @media screen and (max-width: 520px) {
   .partner div:nth-child(2) p {
@@ -1233,12 +1235,10 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
     line-height: 37px;
   }
 }
-.partner div:nth-child(2) .toContact {
-  display: inline-block;
-  text-align: right;
-  width: 100%;
+.partner div:nth-child(2) p:nth-child(3) {
+  text-align: left;
 }
-.partner div:nth-child(2) .toContact a {
+.partner div:nth-child(2) a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -1246,17 +1246,11 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   padding: 20px 50px;
   background-color: white;
   border-radius: 32px;
-  margin-bottom: 50px;
-}
-@media screen and (max-width: 520px) {
-  .partner div:nth-child(2) .toContact a {
-    margin-bottom: 0;
-  }
 }
 
 .valeur_container {
   width: 100%;
-  height: 150vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -1283,6 +1277,7 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
 }
 .valeur_container .valeur div:nth-child(2) {
   width: 60%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1331,7 +1326,7 @@ footer section:nth-child(2) div:nth-child(2) a:nth-child(1) {
   font-weight: 100;
 }
 .valeur_container .valeur div:nth-child(2) img {
-  padding: 50px 50px;
+  padding: 5% 50px;
 }
 .valeur_container .valeur div:nth-child(1) {
   background-image: url("img/runes2.png");
