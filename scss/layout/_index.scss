@@ -583,6 +583,7 @@
         align-items: center;
         justify-content: space-evenly;
         @include mobileS{
+            padding: 15% 5%;
             text-align: center;
             align-items: center;
         }

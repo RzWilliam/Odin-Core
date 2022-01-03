@@ -887,6 +887,7 @@ footer {
     justify-content: space-evenly; }
     @media screen and (max-width: 520px) {
       .partner div:nth-child(2) {
+        padding: 15% 5%;
         text-align: center;
         align-items: center; } }
     .partner div:nth-child(2) h1 {
