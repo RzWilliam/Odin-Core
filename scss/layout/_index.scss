@@ -67,6 +67,7 @@ body{
 .infos-part{
     position: relative;
     overflow: hidden;
+    margin-top: 5%;
 
     .axe{
         position: absolute;
@@ -76,7 +77,15 @@ body{
         z-index: -1;
         transform: rotate(90deg);
         
-        @include mobileS{
+        @include tab{
+            right: -15%; 
+        }
+
+        @include tabS{
+            right: -30%; 
+        }
+
+        @include tabS{
             display: none;
         }
         
@@ -87,6 +96,10 @@ body{
             transform-origin: bottom center;
             z-index: -1;
             transform: rotate(-90deg);
+
+            @include tab{
+                left: -15%; 
+            }
         }
 
         &.active:nth-of-type(2){
@@ -157,7 +170,7 @@ body{
         }
 
         .text-part{
-            width: 43%;
+            width: 50%;
            display: flex;
            flex-direction: column;
            justify-content: space-evenly;
@@ -221,7 +234,7 @@ body{
         }
 
         .cards-part{
-            width: 57%;
+            width: 50%;
             display: inline-flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -604,8 +617,8 @@ body{
         align-items: center;
 
         img{
-            width: auto;
-            height: 100%;
+            width: 50%;
+            height: auto;
 
             @include mobileS{
                 width: 100%;
