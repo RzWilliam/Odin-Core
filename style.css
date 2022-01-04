@@ -1735,6 +1735,36 @@ body {
   }
 }
 
+.admin-false-background-container {
+  background-image: url(img/background_index.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.admin-false-background-container .text {
+  margin-top: 50px;
+  padding: 20px 10%;
+  background-color: #101640;
+  color: white;
+  text-align: center;
+}
+.admin-false-background-container .text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+}
+@media screen and (max-width: 800px) {
+  .admin-false-background-container .text h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .admin-false-background-container .text h1 {
+    font-size: 28px;
+  }
+}
+
 .card-section {
   width: 80%;
   margin: 0 auto;

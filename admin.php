@@ -57,13 +57,20 @@ session_start();
     </section> 
     <?php
     include('view/footer.php');
-        } else{
-
+        } else{?>
+        <section class="admin-false-background-container">
+            <div class="text">
+                <h1>Introuvable</h1>
+            </div>
+        </section>
+        <?php
         }
     } else{
     ?>
-    <section>
-        Salut
+    <section class="admin-false-background-container">
+        <div class="text">
+            <h1>Introuvable</h1>
+        </div>
     </section>
     <?php
     }
