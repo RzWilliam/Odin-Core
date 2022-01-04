@@ -1,0 +1,121 @@
+.admin-true-background-container{
+    background-image: url(img/background_index.png);
+    background-size: cover;
+    background-position: center;
+    height: 42vh;
+    display: grid;
+    place-items: center;
+    .text{
+        margin-top: 50px;
+        padding: 20px 10%;
+        background-color: #101640;
+        color: white;
+        text-align: center;
+
+        h1{
+            font-family: $montsans;
+            font-size: 48px;
+            @include xs{
+                font-size: 32px;
+            }
+            
+            @include mobileS{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.card-section{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .drakkar{
+            position: relative;
+            top: 3px;
+        }
+
+        .card{
+            border: 7px solid #101640;
+            height: 300px;
+            width: 350px;
+            overflow: hidden;
+            position: relative;
+            background-image: url('img/background_index_mountain.png');
+            background-position: center;
+            background-size: cover;
+            color: white;
+            font-family: $montsans;
+
+            .filter{
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 20px;
+                overflow: hidden;
+                height: 100%;
+
+                h3{
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+        
+                h4{
+                    font-size: 20px;
+                    font-weight: 200;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+        
+                p{
+                    font-size: 16px;
+                    overflow: auto;
+                    line-height: 1.2;
+                    height: 70%;
+                    text-align: justify;
+                    padding-right: 7px;
+
+                    &::-webkit-scrollbar{
+                        width: 5px;
+                    }
+
+                    &::-webkit-scrollbar-thumb{
+                        background-color: white;
+                        border-radius: 20px;
+                    }
+                }
+        
+                .delete{
+                    margin-top: 10px;
+                    text-align: right;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+        
+                .deletemessage{
+                    border: none;
+                    background: none;
+                    color: white;
+                    font-family: $montsans;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }  
+        }
+    }
+}

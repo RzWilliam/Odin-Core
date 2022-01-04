@@ -40,13 +40,16 @@ header{
                 color: #707070;
                 font-family: $montsans;
                 font-size: 20px;
+                transition: 100ms;
                 @include xs{
                     color: black;
                 }
 
-                &.active{
-                   font-weight: bold; 
+                &:hover{
+                    font-weight: 700;
                 }
+
+
             }
         }
 
@@ -71,7 +74,7 @@ header{
 }
 
 .white{
-    a{
+    .link{
         color: white;
     }
 }

@@ -13,34 +13,10 @@
     </style>
 </head>
 <body class="contacts-body">
-    <header>
-        <nav>
-            <a href="index.html"><img src="img/logo.png" alt="Logo Odin"></a>
-            <ul>
-                <a href="index.html">
-                    <li>A propos</li>
-                </a>
-                <a href="faq.html">
-                    <li>F.A.Q</li>
-                </a>
-                <a href="contact.html" class="active">
-                    <li>Contact</li>
-                </a>
-            </ul>
-            <div class="burger">                 
-                <div></div>
-                <div></div>
-                <div></div>     
-            </div>  
-        </nav>
-    </header>
-
-    <section class="burger_container">
-        <i class="fas fa-times burger_cross"></i>
-        <a href="index.html">A propos</a>
-        <a href="faq.html">F.A.Q</a>
-        <a href="contact.html">Contact</a>
-    </section>
+    <?php
+    include('view/header.php');
+    include('view/bdd.php');
+    ?>
 
     <section class="content">
 
@@ -73,17 +49,25 @@
         </section>
 
         <section class="form-part">
-
-            <form action="">
+            <form action="" method="POST">
                 <h2>Nous contacter</h2>
-                <input type="text"  placeholder="Nom">
-                <input type="email" placeholder="E-mail">
-                <textarea placeholder="Message"></textarea>
+                <input type="text"  placeholder="Nom" name="nom" required autocomplete="off">
+                <input type="email" placeholder="E-mail" name="mail" required autocomplete="off">
+                <textarea placeholder="Message" name="message" required autocomplete="off"></textarea>
                 <button>Envoyer</button>
             </form>
-
         </section>
+        <?php
+           if(isset($_POST['nom'])){
+                if($_POST['nom']){
+                    $_POST['nom'] = addslashes($_POST['nom']);
+                    $_POST['mail'] = addslashes($_POST['mail']);
+                    $_POST['message'] = addslashes($_POST['message']);
 
+                    $bdd->exec("INSERT INTO contact (name, mail, message) VALUES ('$_POST[nom]', '$_POST[mail]', '$_POST[message]')");
+                }
+            }    
+        ?>
     </section>
 
 

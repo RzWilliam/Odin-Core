@@ -12,35 +12,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
     </style>
 </head>
-<body>
+<body class="white">
 
-    <header class="white">
-        <nav>
-            <a href="index.html"><img src="img/logo.png" alt="Logo Odin"></a>
-            <ul>
-                <a href="index.html" class="active">
-                    <li>A propos</li>
-                </a>
-                <a href="faq.html">
-                    <li>F.A.Q</li>
-                </a>
-                <a href="contact.html">
-                    <li>Contact</li>
-                </a>
-            </ul>
-            <div class="burger">                 
-                <div></div>
-                <div></div>
-                <div></div>     
-            </div>  
-        </nav>
-    </header>
-
+    <?php
+    include('view/header.php');
+    ?>
     <section class="burger_container">
         <i class="fas fa-times burger_cross"></i>
         <a href="index.html">A propos</a>
         <a href="faq.html">F.A.Q</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.php">Contact</a>
     </section>
 
     <section class="background-container">
@@ -204,21 +185,9 @@
 
     </section>
 
-    <footer>
-        <section></section>
-        <section>
-            <div>
-                <p>ODIN</p>
-                <img src="img/logo_odin_core_footer.png" alt="logo_odincore">
-                <p>CORE</p>
-            </div>
-            <div>
-                <a href="index.html">A propos</a>
-                <a href="faq.html">F.A.Q</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </section>
-    </footer>
+    <?php
+    include('view/footer.php');
+    ?>
     
 </body>
 <script src="js/main.js"></script>
