@@ -26,10 +26,15 @@
     
         font-family: $montsans;
         font-size: 20px;
-        color:  black;
         padding-top: 30px;
+        font-family: "Montserrat", sans-serif;
+        color: #707070;
     }
 
+}
+
+.reverse{
+    flex-direction: row-reverse !important;
 }
 
 .project{
@@ -45,12 +50,19 @@
         div:nth-child(1){
             height: 50%;
             width: 100%;
-            background-color: yellow;
+
+            h1{
+                padding-top: 20px;
+                font-weight: bold;
+            }
+
             p{
                 text-align: center;
                 padding-right: 60px;
                 padding-left: 60px;
                 padding-bottom: 60px;
+                font-family: "Montserrat", sans-serif;
+                color: #707070;
             }
         }
 
@@ -65,10 +77,14 @@
 
             h1{
                 color:  white;
+                font-family: "Montserrat", sans-serif;
+                padding-bottom: 20px;
+                font-weight: bold;
             }
 
             p{
                 color:  white;
+                font-family: "Montserrat", sans-serif;
             }
         }
     }

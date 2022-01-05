@@ -1493,8 +1493,13 @@ body {
 .project-intro p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  color: black;
   padding-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+}
+
+.reverse {
+  flex-direction: row-reverse !important;
 }
 
 .project {
@@ -1510,13 +1515,18 @@ body {
 .project div:nth-child(1) div:nth-child(1) {
   height: 50%;
   width: 100%;
-  background-color: yellow;
+}
+.project div:nth-child(1) div:nth-child(1) h1 {
+  padding-top: 20px;
+  font-weight: bold;
 }
 .project div:nth-child(1) div:nth-child(1) p {
   text-align: center;
   padding-right: 60px;
   padding-left: 60px;
   padding-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
 }
 .project div:nth-child(1) div:nth-child(2) {
   background-color: #101640;
@@ -1529,9 +1539,13 @@ body {
 }
 .project div:nth-child(1) div:nth-child(2) h1 {
   color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 20px;
+  font-weight: bold;
 }
 .project div:nth-child(1) div:nth-child(2) p {
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .project div:nth-child(2) img {
   width: 100%;
