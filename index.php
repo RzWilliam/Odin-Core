@@ -17,12 +17,6 @@
     <?php
     include('view/header.php');
     ?>
-    <section class="burger_container">
-        <i class="fas fa-times burger_cross"></i>
-        <a href="index.html">A propos</a>
-        <a href="faq.html">F.A.Q</a>
-        <a href="contact.php">Contact</a>
-    </section>
 
     <section class="background-container">
         <div class="title-logo">
@@ -51,7 +45,7 @@
             <h3>Nos projets</h3>
             <p>Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore sapiente At Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore sapiente At </p>
             <div class="more">
-                <p>Voir plus</p>
+                <a href="project.php"><p>Voir plus</p></a>
             </div>
         </div>
         <div class="cards-part">
@@ -93,7 +87,7 @@
     <div class="service_container">
         <section class="service">
             <div>
-                <h1>Nos services</h1>
+                <h2>Nos services</h2>
                 <p>
                     Nous réalisons des sites vitrine, d'e-commerce, des 
                     applications natives pour tout supports, ou de simples
@@ -123,7 +117,7 @@
             </div>
 
             <div>
-            <h1>Notre partenaire - Agence OZ&</h1>
+            <h2>Notre partenaire - Agence OZ&</h2>
             <p>
                 Véritable camarade de route aujourd'hui, l'agence Oz&
                 nous permet de nous concentrer sur notre cœur de 
@@ -145,16 +139,16 @@
             <div></div>
 
             <div>
-                <h1>Nos valeurs</h1>
+                <h2>Nos valeurs</h2>
                 <img src="img/drakkar.png" alt="drakkar">
                 <p>" Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore 
                     sapiente"</p>
-                <h2>Björn Freyr</h2>
+                <h3>Björn Freyr</h3>
 
                 <img src="img/Viking casque.png" alt="helmet">
                 <p>" Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore
                     sapiente"</p>
-                <h2>Björn Freyr</h2>
+                <h3>Björn Freyr</h3>
             </div>
             <div></div>
         </div>
@@ -162,21 +156,21 @@
         <div class="social_media">
             <div>
                 <img src="img/Logo LinkedIn.png" alt="linkedin">
-                <h1>Linkedin</h1>
+                <h2>Linkedin</h2>
                 <p>Lorem ipsum dolor sit amet.
                     Et sequi omnis ex voluptas
                     autem quo labore sapiente At </p>
             </div>
             <div>
                 <img src="img/Logo Facebook.png" alt="facebook">
-                <h1>Facebook</h1>
+                <h2>Facebook</h2>
                 <p>Lorem ipsum dolor sit amet.
                     Et sequi omnis ex voluptas
                     autem quo labore sapiente At </p>
             </div>
             <div>
                 <img src="img/Logo twitter.png" alt="twitter">
-                <h1>Twitter</h1>
+                <h2>Twitter</h2>
                 <p>Lorem ipsum dolor sit amet.
                     Et sequi omnis ex voluptas
                     autem quo labore sapiente At </p>

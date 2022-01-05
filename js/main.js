@@ -1,4 +1,3 @@
-
 document.querySelector('.burger').addEventListener('click', function(){
 
     document.querySelector('body').style.overflow = "hidden";
