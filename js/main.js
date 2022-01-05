@@ -28,3 +28,26 @@ window.addEventListener('scroll', function() {
     }
 })
 
+let select = document.querySelectorAll('.select');
+let selected = document.querySelectorAll('.selected')
+
+select.forEach(function(item){
+    item.addEventListener('click', function(){
+        select.forEach(function(kill){
+            kill.classList.remove('active')
+        })
+        this.classList.add('active')
+
+        let target = this.getAttribute('data-content');
+
+        for(i = 0; i < selected.length; i++){
+            selected[i].classList.add('hide');
+            selected[i].classList.remove('show');
+
+            if(selected[i].getAttribute('data-content') == target){
+                selected[i].classList.remove('hide');
+                selected[i].classList.add('show');
+            }
+        }
+    })
+})

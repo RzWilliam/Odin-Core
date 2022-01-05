@@ -20,12 +20,20 @@ session_start();
 
          ?>
     <section class="admin-true-background-container">
-        <div class="text">
-            <h1>Admin</h1>
-        </div>
+            <div class="text">
+                <h1>Admin</h1>
+            </div>
+            <section class="choice">
+                <div class="select contact active" data-content='contact'>
+                    Contact
+                </div>
+                <div class="select project hide" data-content="project">
+                    Projets
+                </div>
+            </section>   
     </section>
     
-    <section class="card-section">   
+    <section class="selected contact-section show" data-content="contact">   
     <?php 
     $request = $bdd->query('SELECT * FROM contact ORDER BY id DESC');
     while ($listemessage = $request->fetch()){
@@ -53,8 +61,31 @@ session_start();
         echo '<script type="text/javascript">document.location.replace("admin.php")</script>';
     }  
     ?>
-
-    </section> 
+    </section>
+    <section class="selected project-section hide" data-content="project">
+        <h2>Ajouter un projet :</h2>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <input type="text" name="brand" placeholder="Nom de la marque" autocomplete="off" required>
+            <br>
+            <label for="image">Logo :</label>
+            <br>
+            <input type="file" name="image" required accept="image/png, image/jpg, image/jpeg" class="file">
+            <br>
+            <input type="text" placeholder="Nom Logo" name="image_title" required>
+            <br>
+            <textarea name="description" id="" cols="30" rows="10" autocomplete="off" required placeholder="Description"></textarea>
+            <br>
+            <textarea name="soluce" id="" cols="30" rows="10" autocomplete="off" required placeholder="Solutions apportées (saut à la ligne pris en compte)"></textarea>
+            <br>
+            <label for="project_image">Image mise en avant :</label>
+            <br>
+            <input type="file" name="project_image" required accept="image/png, image/jpg, image/jpeg" class="file">
+            <br>
+            <input type="text" placeholder="Nom Image" name="project_image_title" required>
+            <br>
+            <input type="submit" placeholder="Soummette" name="submit" class="submitproject">
+        </form>
+    </section>
     <?php
     include('view/footer.php');
         } else{?>
@@ -77,4 +108,5 @@ session_start();
     ?>
     
 </body>
+<script src="js/main.js"></script>
 </html>

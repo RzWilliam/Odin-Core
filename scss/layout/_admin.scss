@@ -3,8 +3,11 @@
     background-size: cover;
     background-position: center;
     height: 42vh;
-    display: grid;
+    display: flex;
+    justify-content: center;
     place-items: center;
+    flex-direction: column;
+
     .text{
         margin-top: 50px;
         padding: 20px 10%;
@@ -21,6 +24,33 @@
             
             @include mobileS{
                 font-size: 28px;
+            }
+        }
+    }
+
+    .choice{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        margin: 30px auto 0;
+
+        div{
+            padding: 15px 30px;
+            background-color: #101640;
+            color: white;
+            font-family: $montsans;
+            transition: 300ms;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #fff;
+                color: #101640;
+            }
+
+            &.active{
+                background-color: #fff;
+                color: #101640; 
             }
         }
     }
@@ -54,7 +84,7 @@
     }
 }
 
-.card-section{
+.contact-section{
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -62,11 +92,23 @@
     gap: 10px;
     justify-content: space-around;
 
+    &.show{
+        display: flex;
+        animation-name: littlescaleshow;
+	    animation-duration: 350ms;
+    }
+    &.hide{
+        display: none;
+    }
+
     .card-container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include mobileS{
+            width: 100%;
+        }
 
         .drakkar{
             position: relative;
@@ -85,6 +127,10 @@
             color: white;
             font-family: $montsans;
 
+            @include mobileS{
+                width: 100%;
+            }
+
             .filter{
                 background-color: rgba(0, 0, 0, 0.4);
                 padding: 20px;
@@ -95,6 +141,9 @@
                     font-size: 24px;
                     font-weight: 700;
                     text-align: center;
+                    @include mobileS{
+                        font-size: 20px;
+                    }
                 }
         
                 h4{
@@ -102,6 +151,9 @@
                     font-weight: 200;
                     text-align: center;
                     margin: 20px 0;
+                    @include mobileS{
+                        font-size: 16px;
+                    }
                 }
         
                 p{
@@ -111,6 +163,10 @@
                     height: 70%;
                     text-align: justify;
                     padding-right: 7px;
+                    @include mobileS{
+                        font-size: 14px;
+                        text-align: left;
+                    }
 
                     &::-webkit-scrollbar{
                         width: 5px;
@@ -146,4 +202,98 @@
             }  
         }
     }
+}
+
+.project-section{
+    &.show{
+        display: flex;
+        animation-name: littlescaleshow;
+	    animation-duration: 350ms;
+    }
+
+    &.hide{
+        display: none;
+    }
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    margin-top: 3%;
+    @include mobileS{
+        margin-top: 6%;
+    }
+
+    h2{
+        font-size: 48px;
+        font-weight: 700;
+        color: #101640;
+        font-family: $montsans;
+        margin-bottom: 20px;
+        @include mobileS{
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    form{
+        width: 50%;
+        font-family: $montsans;
+        text-align: center;
+        border: 3px solid #101640;
+        padding: 15px;
+        @include mobileS{
+            width: 90%;
+        }
+
+
+        textarea{
+            font-family: $montsans;
+            padding: 5px 10px;
+            width: 90%;
+            resize: none;
+            margin-bottom: 10px;
+        }
+
+        input{
+            font-family: $montsans;
+            padding: 5px 10px;
+            margin-bottom: 15px;
+        }
+
+        .submitproject{
+            background-color: #101640;
+            border: none;
+            padding: 10px 30px;
+            color: white;
+            font-family: $montsans;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.1);
+        }
+
+        label{
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .file{
+            margin-top: 10px;
+            border: 1px solid black;
+            background-color: #fff;
+            
+            @include mobileS{
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@keyframes littlescaleshow{
+	from{
+		transform: scale(0.9);
+	}
+
+	to{
+		transform: scale(1);
+	}
 }

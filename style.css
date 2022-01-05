@@ -1629,8 +1629,10 @@ body {
   background-size: cover;
   background-position: center;
   height: 42vh;
-  display: grid;
+  display: flex;
+  justify-content: center;
   place-items: center;
+  flex-direction: column;
 }
 .admin-true-background-container .text {
   margin-top: 50px;
@@ -1652,6 +1654,29 @@ body {
   .admin-true-background-container .text h1 {
     font-size: 28px;
   }
+}
+.admin-true-background-container .choice {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 30px auto 0;
+}
+.admin-true-background-container .choice div {
+  padding: 15px 30px;
+  background-color: #101640;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  transition: 300ms;
+  font-weight: 600;
+  cursor: pointer;
+}
+.admin-true-background-container .choice div:hover {
+  background-color: #fff;
+  color: #101640;
+}
+.admin-true-background-container .choice div.active {
+  background-color: #fff;
+  color: #101640;
 }
 
 .admin-false-background-container {
@@ -1684,7 +1709,7 @@ body {
   }
 }
 
-.card-section {
+.contact-section {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -1692,17 +1717,30 @@ body {
   gap: 10px;
   justify-content: space-around;
 }
-.card-section .card-container {
+.contact-section.show {
+  display: flex;
+  animation-name: littlescaleshow;
+  animation-duration: 350ms;
+}
+.contact-section.hide {
+  display: none;
+}
+.contact-section .card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.card-section .card-container .drakkar {
+@media screen and (max-width: 520px) {
+  .contact-section .card-container {
+    width: 100%;
+  }
+}
+.contact-section .card-container .drakkar {
   position: relative;
   top: 3px;
 }
-.card-section .card-container .card {
+.contact-section .card-container .card {
   border: 7px solid #101640;
   height: 300px;
   width: 350px;
@@ -1714,24 +1752,39 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-.card-section .card-container .card .filter {
+@media screen and (max-width: 520px) {
+  .contact-section .card-container .card {
+    width: 100%;
+  }
+}
+.contact-section .card-container .card .filter {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   overflow: hidden;
   height: 100%;
 }
-.card-section .card-container .card .filter h3 {
+.contact-section .card-container .card .filter h3 {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
 }
-.card-section .card-container .card .filter h4 {
+@media screen and (max-width: 520px) {
+  .contact-section .card-container .card .filter h3 {
+    font-size: 20px;
+  }
+}
+.contact-section .card-container .card .filter h4 {
   font-size: 20px;
   font-weight: 200;
   text-align: center;
   margin: 20px 0;
 }
-.card-section .card-container .card .filter p {
+@media screen and (max-width: 520px) {
+  .contact-section .card-container .card .filter h4 {
+    font-size: 16px;
+  }
+}
+.contact-section .card-container .card .filter p {
   font-size: 16px;
   overflow: auto;
   line-height: 1.2;
@@ -1739,21 +1792,27 @@ body {
   text-align: justify;
   padding-right: 7px;
 }
-.card-section .card-container .card .filter p::-webkit-scrollbar {
+@media screen and (max-width: 520px) {
+  .contact-section .card-container .card .filter p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+.contact-section .card-container .card .filter p::-webkit-scrollbar {
   width: 5px;
 }
-.card-section .card-container .card .filter p::-webkit-scrollbar-thumb {
+.contact-section .card-container .card .filter p::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 20px;
 }
-.card-section .card-container .card .filter .delete {
+.contact-section .card-container .card .filter .delete {
   margin-top: 10px;
   text-align: right;
   position: absolute;
   right: 0;
   top: 0;
 }
-.card-section .card-container .card .filter .deletemessage {
+.contact-section .card-container .card .filter .deletemessage {
   border: none;
   background: none;
   color: white;
@@ -1765,6 +1824,96 @@ body {
   border-radius: 50%;
   font-weight: 700;
   cursor: pointer;
+}
+
+.project-section {
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  margin-top: 3%;
+}
+.project-section.show {
+  display: flex;
+  animation-name: littlescaleshow;
+  animation-duration: 350ms;
+}
+.project-section.hide {
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .project-section {
+    margin-top: 6%;
+  }
+}
+.project-section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #101640;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 520px) {
+  .project-section h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+.project-section form {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border: 3px solid #101640;
+  padding: 15px;
+}
+@media screen and (max-width: 520px) {
+  .project-section form {
+    width: 90%;
+  }
+}
+.project-section form textarea {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 10px;
+  width: 90%;
+  resize: none;
+  margin-bottom: 10px;
+}
+.project-section form input {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+.project-section form .submitproject {
+  background-color: #101640;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.project-section form label {
+  margin-top: 15px;
+  text-align: left;
+}
+.project-section form .file {
+  margin-top: 10px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+@media screen and (max-width: 520px) {
+  .project-section form .file {
+    width: 100%;
+  }
+}
+
+@keyframes littlescaleshow {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
