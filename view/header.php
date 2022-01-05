@@ -5,8 +5,8 @@
             <a href="index.php" class="link">
                 <li>A propos</li>
             </a>
-            <a href="faq.html" class="link">
-                <li>F.A.Q</li>
+            <a href="project.php" class="link">
+                <li>Projets</li>
             </a>
             <a href="contact.php" class="link">
                 <li>Contact</li>
@@ -23,6 +23,6 @@
 <section class="burger_container">
     <i class="fas fa-times burger_cross"></i>
     <a href="index.php">A propos</a>
-    <a href="faq.html">F.A.Q</a>
+    <a href="project.php">Projets</a>
     <a href="contact.php">Contact</a>
-</section>
+</section> 

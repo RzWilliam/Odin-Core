@@ -8,7 +8,7 @@
         </div>
         <div>
             <a href="index.php">A propos</a>
-            <a href="faq.html">F.A.Q</a>
+            <a href="project.php">Projets</a>
             <a href="contact.php">Contact</a>
         </div>
     </section>
