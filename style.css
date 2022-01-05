@@ -502,6 +502,7 @@ footer section:nth-child(2) div:nth-child(2) a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #101640;
   gap: 10%;
   opacity: 0;
   transition: 2s ease;
@@ -509,15 +510,16 @@ footer section:nth-child(2) div:nth-child(2) a {
 }
 .burger_container a {
   text-decoration: none;
-  color: #707070;
+  color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 32px;
 }
 .burger_container .burger_cross {
   position: absolute;
-  top: 35px;
+  top: 25px;
   right: 16px;
   font-size: 34px;
+  color: white;
 }
 .burger_container.active {
   opacity: 0;
@@ -528,7 +530,7 @@ footer section:nth-child(2) div:nth-child(2) a {
 }
 .burger_container.animation {
   opacity: 1;
-  background-color: white;
+  background-color: #101640;
   animation: fade-out 1s;
   animation-fill-mode: forwards;
 }
@@ -539,13 +541,13 @@ footer section:nth-child(2) div:nth-child(2) a {
   }
   to {
     opacity: 1;
-    background-color: white;
+    background-color: #101640;
   }
 }
 @keyframes fade-out {
   from {
     opacity: 1;
-    background-color: white;
+    background-color: #101640;
   }
   to {
     opacity: 0;

@@ -6,24 +6,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #101640;
     gap: 10%;
     opacity: 0;
-    transition:  2s ease;
+    transition: 2s ease;
     z-index: 10;
 
 
     a{
         text-decoration: none;
-        color: #707070;
+        color: white;
         font-family: $montsans;
-        font-size: 20px;
+        font-size: 32px;
     }
 
     .burger_cross{
         position: absolute;
-        top: 35px;
+        top: 25px;
         right: 16px;
         font-size: 34px;
+        color: white;
     }
 
     &.active{
@@ -36,23 +38,30 @@
     
     &.animation{
         opacity: 1;
-        background-color: white;
+        background-color: #101640;
         animation: fade-out 1s;
         animation-fill-mode: forwards;
     }
     
     @keyframes fade-in {
-        from {opacity: 0;
-            background-color: transparent;}
-        to{opacity: 1;
-            background-color: white;}
+        from {
+            opacity: 0;
+            background-color: transparent;
+        }
+        to{
+            opacity: 1;
+            background-color: #101640;
+        }
     }
 
     @keyframes fade-out{
-        from{opacity: 1;
-            background-color: white;}
-        to{opacity: 0;
-        background-color: transparent;}
+        from{
+            opacity: 1;
+            background-color: #101640;
+        }
+        to{
+            opacity: 0;
+        background-color: transparent;
     }
-
+    }
 }
