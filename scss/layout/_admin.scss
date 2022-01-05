@@ -257,6 +257,11 @@
             font-family: $montsans;
             padding: 5px 10px;
             margin-bottom: 15px;
+            width: 40%;
+
+            @include mobileS{
+                width: 75%;
+            }
         }
 
         .submitproject{
@@ -268,6 +273,10 @@
             font-weight: 600;
             cursor: pointer;
             box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.1);
+
+            @include mobileS{
+                width: auto;
+            }
         }
 
         label{
@@ -279,6 +288,7 @@
             margin-top: 10px;
             border: 1px solid black;
             background-color: #fff;
+            width: auto;
             
             @include mobileS{
                 width: 100%;

@@ -64,8 +64,8 @@ session_start();
     </section>
     <section class="selected project-section hide" data-content="project">
         <h2>Ajouter un projet :</h2>
-        <form action="" method="POST" enctype="multipart/form-data">
-            <input type="text" name="brand" placeholder="Nom de la marque" autocomplete="off" required>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="text" name="brand" placeholder="Nom de la marque/collection" autocomplete="off" required>
             <br>
             <label for="image">Logo :</label>
             <br>
@@ -87,6 +87,29 @@ session_start();
         </form>
     </section>
     <?php
+    if(isset($_POST['submit'])){
+        if($_POST['submit']){
+            $brand = addslashes($_POST['brand']);
+            $desc = addslashes($_POST['description']);
+            $soluce = addslashes($_POST['soluce']);
+            $project_image_title = addslashes($_POST['project_image_title']);
+            $brand_link = addslashes('project/' . $_FILES['image']['name']);
+            $brand_file =  $_FILES['image']['tmp_name'];
+            $brand_title = htmlspecialchars($_POST['image_title']);
+            $file_brand = str_replace(' ', "_", $brand_link);
+            move_uploaded_file($brand_file, $file_brand); 
+    
+            $img_link = addslashes('project/' . $_FILES['project_image']['name']);
+            $img_file =  $_FILES['project_image']['tmp_name'];
+            $img_title = htmlspecialchars($_POST['image_title']);
+            $file_img = str_replace(' ', "_", $img_link);
+            move_uploaded_file($img_file, $file_img); 
+    
+            $bdd->exec("INSERT INTO project (brand, description, soluce, img, image_title, project_image, project_image_title) VALUES ('$brand', '$desc', '$soluce', '$file_brand', '$img_title', '$file_img', '$project_image_title')");
+            echo '<script type="text/javascript">document.location.replace("admin.php")</script>';
+        }
+    }
+
     include('view/footer.php');
         } else{?>
         <section class="admin-false-background-container">

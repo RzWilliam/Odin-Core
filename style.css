@@ -1484,6 +1484,12 @@ body {
 }
 .project-intro img {
   width: 10%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 560px) {
+  .project-intro img {
+    width: 30%;
+  }
 }
 .project-intro h1 {
   font-family: "Montserrat", sans-serif;
@@ -1512,10 +1518,12 @@ body {
 .project {
   display: flex;
   flex-direction: row;
+  max-height: 600px;
 }
 @media screen and (max-width: 560px) {
   .project {
     flex-direction: column;
+    max-height: none;
   }
 }
 .project div:nth-child(1) {
@@ -1547,6 +1555,9 @@ body {
   .project div:nth-child(1) div:nth-child(1) p {
     font-size: 15px;
   }
+}
+.project div:nth-child(1) div:nth-child(1) img {
+  max-height: 200px;
 }
 @media screen and (max-width: 1024px) {
   .project div:nth-child(1) div:nth-child(1) img {
@@ -1924,6 +1935,12 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 5px 10px;
   margin-bottom: 15px;
+  width: 40%;
+}
+@media screen and (max-width: 520px) {
+  .project-section form input {
+    width: 75%;
+  }
 }
 .project-section form .submitproject {
   background-color: #101640;
@@ -1935,6 +1952,11 @@ body {
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 520px) {
+  .project-section form .submitproject {
+    width: auto;
+  }
+}
 .project-section form label {
   margin-top: 15px;
   text-align: left;
@@ -1943,6 +1965,7 @@ body {
   margin-top: 10px;
   border: 1px solid black;
   background-color: #fff;
+  width: auto;
 }
 @media screen and (max-width: 520px) {
   .project-section form .file {

@@ -13,7 +13,10 @@
 
     img{
         width: 10%;
-        
+        margin-bottom: 20px;
+        @include burger {
+            width: 30%;
+        }
     }
 
     h1{
@@ -47,10 +50,11 @@
 .project{
     display: flex;
     flex-direction: row;
+    max-height: 600px;
 
     @include burger{
         flex-direction: column;
-
+        max-height: none;
     }
 
     div:nth-child(1){
@@ -85,13 +89,14 @@
             }
 
             img{
+                max-height: 200px;
 
                 @include l{
                     width: 40%
                 }
 
                 @include burger{
-                    width: 30%;   
+                    width: 30%;  
                 }
             }
         }

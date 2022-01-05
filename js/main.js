@@ -51,3 +51,13 @@ select.forEach(function(item){
         }
     })
 })
+
+let projects = document.querySelectorAll('.project');
+
+for(i = 0; i < projects.length; i++){
+    if(i % 2 == 0){
+        
+    }else{
+        projects[i].classList.add('reverse');
+    }
+}

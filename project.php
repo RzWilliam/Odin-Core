@@ -16,6 +16,7 @@
 
     <?php
     include('view/header.php');
+    include ('view/bdd.php');
     ?>
     <section class="burger_container">
         <i class="fas fa-times burger_cross"></i>
@@ -37,6 +38,8 @@
 
     <div class="buffer"></div>
 
+    
+
     <section class="project-intro">
         <img src="img/logo_odin_core_black.png" alt="odin_logo">
         <h1>NOS REALISATIONS</h1>
@@ -45,115 +48,29 @@
 
     <div class="buffer"></div>
 
+    <?php
+    $projects = $bdd->query("SELECT * FROM project ORDER BY id ASC");
+    while($project = $projects->fetch()){
+        ?>
     <section class="project">
-
+    <div>
         <div>
-            <div>
-                <img src="img/givenchy_logo.png" alt="">
-                <h1>DAHLIA DIVIN</h1>
-                <p>Présentation du parfum Dahlia Divin sous la forme d’un site evenementiel dédié. La difficulté la plus importante a été de gérer un effet de parallax vertical sur ordinateur et horizontal sur mobile et tablette. </p></div>
-            <div>
-                <h1>Notre solution</h1>
-                <p>Technique utilisée: CMS et javascript</p>
-                <p>Spécifications: <br>
-                -Slider d’images <br>
-                -Système de parallax horizontal/ vertical<br>
-                -Système d’animation d’éléments web<br>
-                -Sécurisation du site</p>
-            </div>
-        </div>
+            <img src="<?php echo $project['img']?>" alt="<?php echo $project['image_title']?>">
+            <h1><?php echo $project['brand']?></h1>
+            <p><?php echo $project ['description']?></p></div>
         <div>
-            <img src="img/givenchy_img.png" alt="">
+            <h1>Notre solution</h1>
+            <p><?php echo nl2br($project['soluce'])?></p>
         </div>
+    </div>
+    <div>
+    <img src="<?php echo $project['project_image']?>" alt="<?php echo $project['project_image_title']?>">
+    </div>
 
     </section>
-
     <div class="buffer"></div>
-
-<section class="project reverse">
-
-    <div>
-        <div>
-            <img src="img/studio_canal_logo.png" alt="">
-            <h1>STUDIO CANAL</h1>
-            <p>Application de vente de Video on Demand Studio Canal. Le but du projet est de permettre aux gens de pouvoir voir les films acheter en blu-ray et dvd sur une appli iPad. Nous avons participé à la création de  l’application et du webservice qui se trouve derrière.
-
- </p></div>
-        <div>
-            <h1>Notre solution</h1>
-            <p>Technique utilisée: Application Native iOS</p>
-            <p>Spécifications:<br>
-            -Slider d’images et de textes<br>
-            -Système de recherche<br>
-            -Système de video on demand<br>
-            -Téléchargement de film<br>
-            -Sécurisation des transferts et protection contre piratage.
-            </p>
-        </div>
-    </div>
-    <div>
-        <img src="img/studio_canal_pres.png" alt="">
-    </div>
-
-</section>
-
-
-<div class="buffer"></div>
-
-<section class="project">
-
-    <div>
-        <div>
-            <img src="img/hd_vison_logo.png" alt="">
-            <h1>HD VISION</h1>
-            <p>Application HD Vision permettant au magazine de me endigital publishing tous ses numéros et de les classer.</p></div>
-        <div>
-            <h1>Notre solution</h1>
-            <p>Technique utilisée: Application Native iOS</p>
-            <p>Spécifications:<br> 
-            -Slider de chapitrage<br> 
-            -Système de vision avant/ après par curseur<br> 
-            -Système d’implémentation vidéo<br> 
-            -Système d’implémentation et mise en page magazine.
-
-            </p>
-        </div>
-    </div>
-    <div>
-        <img src="img/hd_vison_pr.png" alt="">
-    </div>
-
-</section>
-
-
-<div class="buffer"></div>
-
-<section class="project reverse">
-
-    <div>
-        <div>
-            <h1>PARIS VILLE LUMIERE</h1>
-            <p>Application permettant aux touristes de se promener et d’admirer Paris au travers d’une collection de photographies d’exception. La disponibilité d’une carte 3D permettant de localiser ces monuments est un grand plus de l’application.</p></div>
-        <div>
-            <h1>Notre solution</h1>
-            <p>Technique utilisée: Application Native iOS</p>
-            <p>Spécifications:<br> 
-            -Localisation des monuments sur carte 3D<br> 
-            -Slider photo<br> 
-            -Géolocalisation sur carte 2D<br> 
-            -Navigation simplifié par outils d’orientation<br> 
-            </p>
-        </div>
-    </div>
-    <div>
-        <img src="img/paris_pr.png" alt="">
-    </div>
-
-</section>
-
-
-
     <?php
+    }
     include('view/footer.php');
     ?>
     
