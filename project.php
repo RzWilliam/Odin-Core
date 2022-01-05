@@ -82,7 +82,7 @@
         <div>
             <h1>Notre solution</h1>
             <p>Technique utilisée: Application Native iOS</p>
-            <p>Spécifications: 
+            <p>Spécifications:<br>
             -Slider d’images et de textes<br>
             -Système de recherche<br>
             -Système de video on demand<br>
