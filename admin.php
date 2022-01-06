@@ -15,8 +15,8 @@ session_start();
 <body class="white">
     <?php
     include('view/header.php');
-    if(isset($_SESSION['pseudo'])){
-        if($_SESSION['pseudo'] == "Bastien"){
+    if(isset($_SESSION['role'])){
+        if($_SESSION['role'] == "administrateur"){
 
          ?>
     <section class="admin-true-background-container">

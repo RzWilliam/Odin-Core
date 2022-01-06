@@ -62,6 +62,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        max-height: 600px;
 
         div:nth-child(1){
             height: 100%;
@@ -77,11 +78,10 @@
 
             p{
                 text-align: center;
-                padding-right: 60px;
-                padding-left: 60px;
-                padding-bottom: 60px;
+                padding: 0 50px 50px;
                 font-family: "Montserrat", sans-serif;
                 color: #707070;
+                line-height: 1.5;
 
                 @include l{
                     font-size: 15px;
@@ -89,7 +89,7 @@
             }
 
             img{
-                max-height: 200px;
+                max-height: 150px;
 
                 @include l{
                     width: 40%
@@ -104,11 +104,12 @@
         div:nth-child(2){
             background-color: #101640;
             width: 100%;
-            height: fit-content;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            
 
             h1{
                 color:  white;
@@ -122,6 +123,7 @@
                 color:  white;
                 font-family: "Montserrat", sans-serif;
                 padding: 10px 10px 20px 10px;
+                line-height: 1.2;
 
                 @include l{
                     font-size: 15px;

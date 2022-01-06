@@ -18,12 +18,6 @@
     include('view/header.php');
     include ('view/bdd.php');
     ?>
-    <section class="burger_container">
-        <i class="fas fa-times burger_cross"></i>
-        <a href="index.html">A propos</a>
-        <a href="faq.html">F.A.Q</a>
-        <a href="contact.php">Contact</a>
-    </section>
 
     <section class="background-container">
         <div class="title-logo">

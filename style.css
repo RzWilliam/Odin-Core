@@ -486,6 +486,7 @@ footer section:nth-child(2) div:nth-child(2) a {
   font-size: 34px;
   padding: 20px 60px;
   border-radius: 18px;
+  cursor: pointer;
 }
 @media screen and (max-width: 520px) {
   .contacts-body .content .form-part form button {
@@ -1531,6 +1532,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  max-height: 600px;
 }
 .project div:nth-child(1) div:nth-child(1) {
   height: 100%;
@@ -1545,11 +1547,10 @@ body {
 }
 .project div:nth-child(1) div:nth-child(1) p {
   text-align: center;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-bottom: 60px;
+  padding: 0 50px 50px;
   font-family: "Montserrat", sans-serif;
   color: #707070;
+  line-height: 1.5;
 }
 @media screen and (max-width: 1024px) {
   .project div:nth-child(1) div:nth-child(1) p {
@@ -1557,7 +1558,7 @@ body {
   }
 }
 .project div:nth-child(1) div:nth-child(1) img {
-  max-height: 200px;
+  max-height: 150px;
 }
 @media screen and (max-width: 1024px) {
   .project div:nth-child(1) div:nth-child(1) img {
@@ -1572,7 +1573,7 @@ body {
 .project div:nth-child(1) div:nth-child(2) {
   background-color: #101640;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1589,6 +1590,7 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   padding: 10px 10px 20px 10px;
+  line-height: 1.2;
 }
 @media screen and (max-width: 1024px) {
   .project div:nth-child(1) div:nth-child(2) p {
