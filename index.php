@@ -55,6 +55,12 @@
             <div>
                 <img src="img/renault.png" alt="Logo Renault">
             </div>
+            <div>
+                <img src="img/givenchy_logo.png" alt="Logo Givenchy">
+            </div>
+            <div>
+                <img src="img/studio_canal_logo.png" alt="Logo Studio Canal">
+            </div>
         </div>
     </section>
 
@@ -64,7 +70,7 @@
             <div class="infos">
                 <h2>Bastien Saudemont</h2>
                 <h3>Spécialiste en management et conception</h3>
-                <p>Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore sapiente At Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore sapiente At </p>
+                <p>Réflexion et optimisation sont mes maîtres mots lorsque je me mets à votre service. J’aime relever des défis aussi conceptuel que structurel et ma double compétence de création/conception et de suivi de projet me permet de suivre mes idées jusqu’à leur pleine réalisation.</p>
                 <div class="social">
                     <div>
                         <a href="https://fr.linkedin.com/company/odincore" target="_blank"><i class="fab fa-linkedin-in"></i></a>
