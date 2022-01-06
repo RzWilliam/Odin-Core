@@ -26,30 +26,38 @@ header{
             }
         }
 
-        ul{
-            list-style: none;
+        .links{
             display: flex;
-            gap: 96px;
+            width: 50%;
 
-            @include burger{
-                display: none;
-            }
-
-            a{
-                text-decoration: none;
-                color: #707070;
-                font-family: $montsans;
-                font-size: 20px;
-                transition: 100ms;
-                @include xs{
-                    color: black;
+            ul{
+                list-style: none;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: space-evenly;
+    
+                @include burger{
+                    display: none;
                 }
-
-                &:hover{
-                    font-weight: 700;
+    
+                a{
+                    text-decoration: none;
+                    color: #707070;
+                    font-family: $montsans;
+                    font-size: 20px;
+                    transition: 100ms;
+                    @include xs{
+                        color: white;
+                        font-weight: bold;
+                    }
+    
+                    &:hover{
+                        font-weight: 700;
+                    }
+    
+    
                 }
-
-
             }
         }
 
