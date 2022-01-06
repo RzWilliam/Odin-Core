@@ -35,7 +35,7 @@
         $pseudo = $_POST['pseudo'];
 
         //  Récupération de l'utilisateur et de son pass hashé
-        $req = $bdd->prepare("SELECT id, mdp FROM admin WHERE pseudo = :pseudo");
+        $req = $bdd->prepare("SELECT id, mdp, role FROM admin WHERE pseudo = :pseudo");
         $req->execute(array(
             'pseudo' => $pseudo));
         $resultat = $req->fetch(); /*Cela retourne ici, le mot de passe haché (un exemple) présent dans la base de donnée*/
@@ -57,6 +57,7 @@
                 session_start();
                 $_SESSION['id'] = $resultat['id'];
                 $_SESSION['pseudo'] = $pseudo;
+                $_SESSION['role'] = $resultat['role'];
                 echo '<script type="text/javascript">document.location.replace("admin.php")</script>';
             }else {
             echo '<p class="wrong">Mauvais identifiant ou mot de passe !</p>';

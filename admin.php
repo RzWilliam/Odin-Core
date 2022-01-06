@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="img/logo.png">
-    <title><?php if(isset($_SESSION['pseudo'])){if($_SESSION['pseudo'] == 'Bastien'){echo 'Admin';}else{echo '404';}}else{echo '404';} ?></title>
+    <title><?php if(isset($_SESSION['role'])){if($_SESSION['role'] == 'administrateur'){echo 'Odin Core - Admin';}else{echo 'Odin Core - 404';}}else{echo 'Odin Core - 404';} ?></title>
 </head>
 <body class="white">
     <?php
@@ -71,7 +71,7 @@ session_start();
             <br>
             <input type="file" name="image" required accept="image/png, image/jpg, image/jpeg" class="file">
             <br>
-            <input type="text" placeholder="Nom Logo" name="image_title" required>
+            <input type="text" placeholder="Nom Logo" name="image_title" required autocomplete="off">
             <br>
             <textarea name="description" id="" cols="30" rows="10" autocomplete="off" required placeholder="Description"></textarea>
             <br>
@@ -81,11 +81,12 @@ session_start();
             <br>
             <input type="file" name="project_image" required accept="image/png, image/jpg, image/jpeg" class="file">
             <br>
-            <input type="text" placeholder="Nom Image" name="project_image_title" required>
+            <input type="text" placeholder="Nom Image" name="project_image_title" required autocomplete="off">
             <br>
-            <input type="submit" placeholder="Soummette" name="submit" class="submitproject">
+            <input type="submit" value="Publier" name="submit" class="submitproject">
         </form>
-    </section>
+    
+        <h2>Liste des projets :</h2>
     <?php
     if(isset($_POST['submit'])){
         if($_POST['submit']){
@@ -109,6 +110,29 @@ session_start();
             echo '<script type="text/javascript">document.location.replace("admin.php")</script>';
         }
     }
+
+    $projects = $bdd->query('SELECT * FROM project ORDER BY id DESC');
+    while($projectlist = $projects->fetch()){
+        ?>
+    <div class="projectlist">
+        <img src="<?php echo $projectlist['img']?>" alt="<?php echo $projectlist['image_title']?>">
+        <h2><?php echo $projectlist['brand']?></h2>
+        <form method="POST" action="<?php echo '?id='.$projectlist['id'].''?>">
+			<input type="submit" name="deleteproject" value="X">
+		</form>
+    </div>
+
+
+    <?php
+    }
+    if(isset($_POST['deleteproject'])){
+        if($_POST['deleteproject'])
+        $bdd->exec("DELETE FROM project WHERE id = '$_GET[id]'");
+        echo '<script type="text/javascript">document.location.replace("admin.php")</script>';
+    }
+    ?>
+    </section>
+    <?php
 
     include('view/footer.php');
         } else{?>

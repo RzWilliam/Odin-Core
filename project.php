@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Odin Core - A Propos</title>
+    <title>Odin Core - Projets</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
     </style>
