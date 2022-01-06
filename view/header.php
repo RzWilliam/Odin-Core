@@ -1,17 +1,21 @@
 <header>
     <nav>
         <a href="index.php"><img src="img/logo.png" alt="Logo Odin"></a>
-        <ul>
-            <a href="index.php" class="link">
-                <li>A propos</li>
-            </a>
-            <a href="project.php" class="link">
-                <li>Projets</li>
-            </a>
-            <a href="contact.php" class="link">
-                <li>Contact</li>
-            </a>
-        </ul>
+
+        <div class="links">
+            <ul>
+                <a href="index.php" class="link">
+                    <li>A propos</li>
+                </a>
+                <a href="project.php" class="link">
+                    <li>Projets</li>
+                </a>
+                <a href="contact.php" class="link">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+
         <div class="burger">                 
             <div></div>
             <div></div>
