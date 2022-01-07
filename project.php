@@ -47,13 +47,13 @@
     while($project = $projects->fetch()){
         ?>
     <section class="project">
-    <div>
+    <div class="change black">
         <div>
             <img src="<?php echo $project['img']?>" alt="<?php echo $project['image_title']?>">
-            <h2><?php echo $project['brand']?></h1>
+            <h2 class="title black"><?php echo $project['brand']?></h2>
             <p><?php echo $project ['description']?></p></div>
         <div>
-            <h3>Notre solution</h1>
+            <h3>Notre solution</h3>
             <p><?php echo nl2br($project['soluce'])?></p>
         </div>
     </div>
@@ -62,6 +62,7 @@
     </div>
 
     </section>
+    <div class="buffer small"></div>
     <?php
     }
     include('view/footer.php');

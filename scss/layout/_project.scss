@@ -1,6 +1,10 @@
 .buffer{
     width: 100%;
     height: 25vh;
+    
+    &.small{
+        height: 5vh;
+    }
 }
 
 .project-intro{
@@ -67,8 +71,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        width: 50%;
-        background-color: #101640;;
+        width: 45%;
+        
 
         @include burger{
             width: 100%;
@@ -78,11 +82,12 @@
         div:nth-child(1){
             height: 100%;
             width: 100%;
+            background-color: #fff;
 
             h2{
                 padding: 20px 0px;
                 font-weight: bold;
-                color: white;
+                color: black;
                 font-size: 32px;
                 font-family: "Montserrat", sans-serif;
                 text-align: center;
@@ -97,7 +102,7 @@
                 text-align: center;
                 padding: 0 35px 20px;
                 font-family: "Montserrat", sans-serif;
-                color: white;
+                color: black;
                 line-height: 1.5;
 
                 @include l{
@@ -150,7 +155,7 @@
     }
 
     div:nth-child(2){
-        width: 50%;
+        width: 55%;
 
         @include burger{
             width: 100%;
