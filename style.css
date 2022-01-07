@@ -1431,6 +1431,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+@keyframes fade-in {
+  100% {
+    opacity: 100%;
+  }
+}
+.valeur_container .social_media.active div:nth-child(1) {
+  animation: fade-in 500ms ease-in-out forwards;
+}
+.valeur_container .social_media.active div:nth-child(2) {
+  animation: fade-in 2000ms ease-in-out forwards;
+}
+.valeur_container .social_media.active div:nth-child(3) {
+  animation: fade-in 3000ms ease-in-out forwards;
+}
 @media screen and (max-width: 520px) {
   .valeur_container .social_media {
     height: 100%;
@@ -1453,6 +1467,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  opacity: 0%;
 }
 @media screen and (max-width: 520px) {
   .valeur_container .social_media div {

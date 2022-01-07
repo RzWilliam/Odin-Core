@@ -20,10 +20,20 @@ document.querySelector('.burger_cross').addEventListener('click', function(){
 let axes = document.querySelectorAll('.axe');
 let background = document.querySelector('.background-container')
 
+let value = document.querySelector('.valeur')
+let social = document.querySelectorAll('.social_media');
+
 window.addEventListener('scroll', function() {
     if(window.scrollY > (background.offsetTop + background.offsetHeight) / 3){
         axes.forEach(function(axe){
             axe.classList.add('active');
+        })
+    }
+
+
+    if(window.scrollY > 3056){
+        social.forEach(function(social){
+            social.classList.add('active');
         })
     }
 })
