@@ -147,14 +147,10 @@
             <div>
                 <h2>Nos valeurs</h2>
                 <img src="img/drakkar.png" alt="drakkar">
-                <p>" Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore 
-                    sapiente"</p>
-                <h3>Björn Freyr</h3>
+                <p>"Il n'y a rarement qu'une seule vague"</p>
 
                 <img src="img/Viking casque.png" alt="helmet">
-                <p>" Lorem ipsum dolor sit amet. Et sequi omnis ex voluptas autem quo labore
-                    sapiente"</p>
-                <h3>Björn Freyr</h3>
+                <p>"Odin a donné son oeil pour acquérir le savoir, mais je donnerais bien plus."</p>
             </div>
             <div></div>
         </div>
@@ -163,23 +159,14 @@
             <div>
                 <img src="img/Logo LinkedIn.png" alt="linkedin">
                 <h2>Linkedin</h2>
-                <p>Lorem ipsum dolor sit amet.
-                    Et sequi omnis ex voluptas
-                    autem quo labore sapiente At </p>
             </div>
             <div>
                 <img src="img/Logo Facebook.png" alt="facebook">
                 <h2>Facebook</h2>
-                <p>Lorem ipsum dolor sit amet.
-                    Et sequi omnis ex voluptas
-                    autem quo labore sapiente At </p>
             </div>
             <div>
                 <img src="img/Logo twitter.png" alt="twitter">
                 <h2>Twitter</h2>
-                <p>Lorem ipsum dolor sit amet.
-                    Et sequi omnis ex voluptas
-                    autem quo labore sapiente At </p>
             </div>
         </div>
 

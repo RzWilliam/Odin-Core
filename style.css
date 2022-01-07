@@ -775,7 +775,7 @@ body {
 }
 @media screen and (max-width: 520px) {
   .infos-part .infos {
-    margin: 33% auto 12%;
+    margin: 20% auto 12%;
   }
 }
 .infos-part .infos h3 {
@@ -1421,7 +1421,6 @@ body {
   }
 }
 .valeur_container .valeur div:nth-child(2) p {
-  margin-bottom: 20px;
   line-height: 30px;
 }
 .valeur_container .valeur div:nth-child(2) p, .valeur_container .valeur div:nth-child(2) h3 {
@@ -1444,6 +1443,7 @@ body {
 }
 .valeur_container .valeur div:nth-child(2) h3 {
   font-weight: 100;
+  margin-bottom: 20px;
 }
 .valeur_container .valeur div:nth-child(2) img {
   padding: 5% 50px;
