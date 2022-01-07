@@ -12,7 +12,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
     </style>
 </head>
-<body class="white">
+<body class="white index-body">
 
     <?php
     include('view/header.php');

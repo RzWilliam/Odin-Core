@@ -12,7 +12,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
     </style>
 </head>
-<body class="white">
+<body class="white projets-body">
 
     <?php
     include('view/header.php');
@@ -50,10 +50,10 @@
     <div>
         <div>
             <img src="<?php echo $project['img']?>" alt="<?php echo $project['image_title']?>">
-            <h1><?php echo $project['brand']?></h1>
+            <h2><?php echo $project['brand']?></h1>
             <p><?php echo $project ['description']?></p></div>
         <div>
-            <h1>Notre solution</h1>
+            <h3>Notre solution</h1>
             <p><?php echo nl2br($project['soluce'])?></p>
         </div>
     </div>
@@ -62,7 +62,6 @@
     </div>
 
     </section>
-    <div class="buffer"></div>
     <?php
     }
     include('view/footer.php');
