@@ -591,6 +591,57 @@ footer section:nth-child(2) div:nth-child(2) a:hover {
   }
 }
 
+.drakkar-burger {
+  position: relative;
+  width: 100%;
+}
+.drakkar-burger img:nth-of-type(1) {
+  width: 100px;
+  animation: swell 3s ease infinite, traverse 20s linear infinite;
+  transform: translate3d(0, 0, 0);
+  transform-origin: bottom left;
+  position: relative;
+}
+.drakkar-burger img:nth-of-type(2) {
+  position: absolute;
+  width: 110vw;
+  height: 50px;
+  left: -20px;
+  bottom: -15px;
+}
+.drakkar-burger.reverse img:nth-of-type(1) {
+  animation: swell 3s ease infinite, traverse-reverse 22s linear infinite;
+  transform: translate3d(0, 0, 0);
+  transform-origin: bottom right;
+  position: relative;
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(-10px, -20px, 0);
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    transform: translate3d(10px, -10px, 0);
+    transform: rotateZ(5deg);
+  }
+}
+@keyframes traverse {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes traverse-reverse {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -50vw;
+  }
+}
 body {
   overflow-x: hidden;
 }

@@ -26,7 +26,15 @@
 
 <section class="burger_container">
     <i class="fas fa-times burger_cross"></i>
+    <div class="drakkar-burger">
+        <img src="img/drakkar-white.png" alt="Drakkar">
+        <img src="img/wave.png" alt="Vague">
+    </div>
     <a href="index.php">A propos</a>
     <a href="project.php">Projets</a>
     <a href="contact.php">Contact</a>
+    <div class="drakkar-burger reverse">
+        <img src="img/drakkar-white-reverse.png" alt="Drakkar">
+        <img src="img/wave.png" alt="Vague">
+    </div>
 </section> 
