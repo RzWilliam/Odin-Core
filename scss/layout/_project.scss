@@ -5,6 +5,10 @@
     &.small{
         height: 5vh;
     }
+
+    &:last-of-type{
+        height: 0;
+    }
 }
 
 .project-intro{

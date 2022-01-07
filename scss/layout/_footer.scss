@@ -71,9 +71,9 @@ footer{
             }
 
             p:nth-child(1){
-                padding-left: 60px;
+                margin-left: 60px;
                 @include mobileS{
-                    padding: 0;
+                    margin: 0;
                 }
             }
         }
@@ -125,9 +125,11 @@ footer{
             justify-content: center;
 
             div:nth-child(1){
-                width: fit-content;
-                p{
+                justify-content: center;
+                margin-bottom: 10px;
+                p, .odin.text{
                     font-size: 28px;
+                    margin: 0;
                 }
             }
 

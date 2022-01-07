@@ -2,7 +2,7 @@
     <section></section>
     <section>
         <div>
-            <p>ODIN</p>
+            <p class="odin text">ODIN</p>
             <img src="img/logo_odin_core_footer.png" alt="logo_odincore">
             <p>CORE</p>
         </div>
