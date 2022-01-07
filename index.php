@@ -103,7 +103,7 @@
                     dépassant la gamification.
                 </p>
 
-                <a href="contact.html">Nous contacter</a>
+                <a href="contact.php">Nous contacter</a>
 
             </div>
             <div>

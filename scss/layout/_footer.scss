@@ -89,10 +89,15 @@ footer{
                 color: white;
                 font-size: 27px;
                 font-family: 'Montserrat', sans-serif;
-                font-weight: normal; 
+                font-weight: normal;
+                transition: 150ms;
                 @include mobileS{
                     font-size: 16px;
                     padding: 0 0;
+                }
+
+                &:hover{
+                    font-weight: 600;
                 }
             }
         }

@@ -62,8 +62,14 @@ table {
 .index-body .link:nth-of-type(1) {
   font-weight: 600;
 }
+.index-body footer section:nth-child(2) div:nth-child(2) a:nth-of-type(1) {
+  font-weight: 600;
+}
 
 .projets-body .link:nth-of-type(2) {
+  font-weight: 600;
+}
+.projets-body footer section:nth-child(2) div:nth-child(2) a:nth-of-type(2) {
   font-weight: 600;
 }
 
@@ -248,12 +254,16 @@ footer section:nth-child(2) div:nth-child(2) a {
   font-size: 27px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
+  transition: 150ms;
 }
 @media screen and (max-width: 520px) {
   footer section:nth-child(2) div:nth-child(2) a {
     font-size: 16px;
     padding: 0 0;
   }
+}
+footer section:nth-child(2) div:nth-child(2) a:hover {
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 1032px) {
@@ -875,6 +885,10 @@ body {
 }
 .projects-part .cards-part div img {
   width: 100%;
+  height: 100%;
+  max-height: 130px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .team-part {
@@ -1531,7 +1545,7 @@ body {
   width: 10%;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project-intro img {
     width: 30%;
   }
@@ -1542,7 +1556,7 @@ body {
   color: #101640;
   text-align: center;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project-intro h1 {
     font-size: 28px;
     padding: 0 10px;
@@ -1563,7 +1577,7 @@ body {
   max-height: 600px;
   background-color: #101640;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project {
     flex-direction: column;
     max-height: none;
@@ -1572,7 +1586,7 @@ body {
 .project.reverse {
   flex-direction: row-reverse;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project.reverse {
     flex-direction: column;
   }
@@ -1584,7 +1598,7 @@ body {
   justify-content: space-evenly;
   width: 45%;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project div:nth-child(1) {
     width: 100%;
     max-height: none;
@@ -1603,7 +1617,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project div:nth-child(1) div:nth-child(1) h2 {
     font-size: 24px;
     margin: 20px 0;
@@ -1654,7 +1668,7 @@ body {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project div:nth-child(1) div:nth-child(2) p {
     font-size: 14px;
   }
@@ -1662,7 +1676,7 @@ body {
 .project div:nth-child(2) {
   width: 55%;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .project div:nth-child(2) {
     width: 100%;
   }

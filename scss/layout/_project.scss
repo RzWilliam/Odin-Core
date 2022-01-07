@@ -18,7 +18,7 @@
     img{
         width: 10%;
         margin-bottom: 20px;
-        @include burger {
+        @include xs{
             width: 30%;
         }
     }
@@ -28,7 +28,7 @@
         font-size: 32px;
         color:  #101640;
         text-align: center;
-        @include burger{
+        @include xs{
             font-size: 28px;
             padding: 0 10px;
         }
@@ -52,7 +52,7 @@
     max-height: 600px;
     background-color: #101640;
 
-    @include burger{
+    @include xs{
         flex-direction: column;
         max-height: none;
     }
@@ -60,7 +60,7 @@
     &.reverse{
         flex-direction: row-reverse ;
     
-        @include burger{
+        @include xs{
             flex-direction: column;
     
         }
@@ -74,7 +74,7 @@
         width: 45%;
         
 
-        @include burger{
+        @include xs{
             width: 100%;
             max-height: none;
         }
@@ -91,7 +91,7 @@
                 font-size: 32px;
                 font-family: "Montserrat", sans-serif;
                 text-align: center;
-                @include burger{
+                @include xs{
                     font-size: 24px;
                     margin: 20px 0;
                     padding: 0 5px;
@@ -146,7 +146,7 @@
                     
                 }
 
-                @include burger{
+                @include xs{
                     font-size: 14px;
                    
                 }
@@ -157,7 +157,7 @@
     div:nth-child(2){
         width: 55%;
 
-        @include burger{
+        @include xs{
             width: 100%;
         }
         img{
